@@ -1,3 +1,10 @@
 .btn-primary {
   background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  transition: all 0.1s ease-in-out; 
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:visited, .btn-primary:focus:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.8);;
 }
