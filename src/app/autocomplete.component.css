@@ -1,0 +1,50 @@
+.autocomplete__wrapper {
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+	font-family: 'Open Sans';
+	font-size: 1.4em;
+}
+
+.autocomplete__list-container {
+	border: 1px solid grey;
+	border-top: 0;
+	position: absolute;
+	width: 90%;
+	top: 99%;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+	display: none;
+  border: 2px solid #fff; 
+}
+
+.autocomplete__list-item {
+	font-size: 1.1em;
+	padding: 0.2em;
+	cursor: pointer;
+	text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.autocomplete__list-item:hover {
+	background: rgba(0, 0, 0, 0.05)
+}
+
+.autocomplete__list-item--hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.autocomplete__input {
+  background: rgba(0, 0, 0, 0);
+	font-size: 1.1em;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1.2em;
+  padding: 0.5em 1em;
+}
+
+.autocomplete__input.autocomplete__input--autocomplete-visible + .autocomplete__list-container {
+	display: block;
+}
