@@ -1,0 +1,8 @@
+<nav class="priamary-menu">
+  <ul class="menu__list">
+    <li class="menu__item" *ngFor="let page of menuPages"
+        (click)="changePage(page)" [ngClass]="{ 'menu__item--selected': selectedPage === page }"
+        [routerLink]="[page.url]"
+    >{{ page.title }}</li>
+  </ul>
+</nav>
