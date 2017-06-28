@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpModule, JsonpModule, Jsonp, Response } from '@angular/http';
 
 // ---------------- ngrx  ------------------- //
 import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
+import { EffectsModule, Actions } from '@ngrx/effects';
 import { RouterStoreModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
@@ -19,24 +19,49 @@ import { MenuComponent } from './components/menu.component';
 import { AutocompleteComponent } from './components/autocomplete.component';
 import { SearchPageComponent } from './components/pages/search/search-page.component';
 import { ContactPageComponent } from './components/pages/contact/contact-page.component';
+import { SidebarComponent } from './components/sidebar.component';
+import { LoaderComponent } from './components/UI/loader.component';
 
-// ------------------ // // ------------------------//
+
+// ---------------- directives  ---------------- //
+import { SearchDirective } from './directives/search.directive'
+
+// ------------------ // http services // ------------------------//
+import { ApiService} from './services/api.service'
+import { JsonpRequestService } from './services/jsonp-request.service';
+
+// ------------------- // state managing // -------------------- //
+import { reducer } from './reducers';
+
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
     HttpModule,
-  //  StoreModule.provideStore(reducer),
+    StoreModule.provideStore(reducer),
+    StoreDevtoolsModule.instrumentOnlyWithExtension(),
     RouterModule.forRoot(routes, { useHash: true }),
+    JsonpModule,
+    EffectsModule.run(ApiService)
   ],
   declarations: [
     AppComponent,
     MenuComponent,
     AutocompleteComponent,
     SearchPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    SearchDirective,
+    SidebarComponent,
+    LoaderComponent
   ],
-  providers: [],
+  providers: [
+    JsonpRequestService,
+    ApiService,
+    Actions
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){
+  }
+}

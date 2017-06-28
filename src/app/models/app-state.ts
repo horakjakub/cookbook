@@ -1,5 +1,5 @@
-import { Meal } from './meal';
+import { Recipe } from './recipe';
 
 export interface AppState {
-  meals: Meal[];
+  recipes: Recipe[];
 }

@@ -6,8 +6,11 @@ import { RouterModule } from '@angular/router';
   template: `
     <menu></menu>
     <router-outlet></router-outlet>
+    <sidebar></sidebar>
+    <loader></loader>
   `
 })
 
 export class AppComponent {
+
 }

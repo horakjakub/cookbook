@@ -4,22 +4,186 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../../../images/pan-seared-salmon-steak-fillet-picjumbo-com.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  overflow: hidden;
 }
 
 .main-view__container {
+  padding: 6em 0 0 0;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0, 0.5)
+  background: rgba(0,0,0, 0.01);
+  overflow: auto;
+  flex-direction: column;
 }
 
 .main-view__btn {
   margin: 0 5px;
+}
+
+.search-results__container {
+  display: inline-flex;
+  padding: 0.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.search-results__item {
+  width: 28em;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid rgba(0,0, 0, 0.2);
+}
+
+.search-results__item__wrapper {
+  margin: 0em;
+  padding: 1em;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  display: flex;
+}
+
+.search-results__item__wrapper:hover {
+  background: rgba(0, 0, 0, 0.04);
+
+}
+.search-results__item__wrapper:hover .search-results__image__overlay {
+  background: rgba(255, 255, 255, 0);
+}
+
+.search__container {
+  display: flex;
+  width: 100%;
+  height: 14em;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__input {
+  background: rgba(255,255,255, 0);
+}
+
+.search-results__image {
+  width: 100%;
+  height: 30em;
+  background: rgba(0, 0, 0, 1);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.search-results__image__overlay {
+  position: absolute;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-results__icon__wrapper {
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  right: 0.99em;
+  top: 0.99em;
+  background: rgba(0, 0, 0, 0.2);
+  width: 4em;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-results__icon__wrapper:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.search-results__icon {
+  font-size: 2.3em;
+}
+
+.search-results__label {
+  display: flex;
+  color: #000;
+  padding: 1em;
+  font-size: 1.5em;
+  white-space: normal;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search-results__details-box {
+  position: absolute;
+  margin: 0;
+  width: 28em;
+  height: 0;
+  background: #fff;
+  display: flex;
+  visibility: hidden;
+  border-radius: 5px;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid rgba(0,0, 0, 0.2);
+}
+
+.search-results__item__wrapper.selected .search-results__details-box {
+  visibility: visible;
+  height: calc(100% - 2em);
+  padding: 1em;
+}
+
+.search-results__item__wrapper.selected  .search-results__image__overlay{
+  display: none;
+}
+
+.search-results__item__wrapper.selected .search-results__icon__wrapper:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.search-results__details-box__title {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0.3em 0;
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #B23400;
+}
+
+.search-results__details-box__subtitle {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0.3em 0;
+  font-size: 1.4em;
+}
+
+.search-results__details-box__list {
+  height: 22em;
+  overflow: auto;
+  list-style: disc;
+  padding-left: 1.8em;
+  margin: 0.4em 0 1em 0;
+}
+
+.search-results__details-box__list__item {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0.3em 0;
+  font-size: 1.4em;
+}
+
+.search-results__details-box__link {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

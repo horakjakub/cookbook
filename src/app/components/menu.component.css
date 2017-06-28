@@ -1,28 +1,112 @@
-.priamary-menu {
+.primary-menu {
   position: fixed;
-  background: #000;
+  background: #fff;
   width: 100%;
-  border-bottom: 2px solid #fff;
-  z-index: 1;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: flex;
 }
 
 .menu__list {
   display: flex;
   list-style: none;
-  margin-bottom: 0;
+  margin: 0 1em;
 }
 
 .menu__item {
   font-size: 1.4em;
-  color: rgba(255, 255, 255, 0.7);
-  padding: 1em;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  outline: 0;
 }
-.menu__item:hover {
-  background: rgba(255, 255, 255, 0.15);
+
+.menu__item:hover:not(.menu__item--selected) {
+  color: rgba(0, 178, 152, 0.6);
 }
 
 .menu__item--selected {
-  background: rgba(255, 255, 255, 0.15);
+  color: #00B298;
+}
+
+.menu__search__container {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.menu__search__input {
+  background: rgba(255,255,255, 0);
+  border: 2px solid #ddd;
+  font-size: 1.4em;
+  padding: 0.3em 0.8em;
+  outline-color: rgba(0,0,0, 0.01);
+  margin: 0.1em 0 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  width: 20em;
+}
+
+.menu__search__input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-weight: normal;
+}
+.menu__search__input::-moz-placeholder { /* Firefox 19+ */
+  font-weight: normal;
+}
+.menu__search__input:-ms-input-placeholder { /* IE 10+ */
+  font-weight: normal;
+}
+.menu__search__input:-moz-placeholder { /* Firefox 18- */
+  font-weight: normal;
+}
+
+.menu__search__button {
+  background: #00B298;
+  color: rgba(0, 0, 0, .4);
+  display: inline-flex;
+  padding: 0.4em 0.5em 0.5em;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid #00B298;
+  cursor: pointer;
+  margin: 0 0 0 0.5em;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__search__icon {
+  cursor: pointer;
+  color: #FFF;
+  font-size: 1.8em;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__search__button:hover {
+  background: #ddd;
+  border: 2px solid #ddd;
+}
+.menu__search__button:hover .menu__search__icon {
+  color: #fff;
+}
+
+.menu__icons__container {
+  display: flex;
+  justify-content: center;
+  padding: 1.2em 1em 1em 1em;
+  margin: 0 1em 0 auto;
+}
+
+.menu__favorite__icon {
+  font-size: 2.5em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__favorite__icon--selected {
+  color: #00B298;
 }

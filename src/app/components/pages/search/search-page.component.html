@@ -1,5 +1,26 @@
 <section class="main-view__background">
   <div class="main-view__container">
-    <autocomplete></autocomplete>
+    <section class="search-results__container">
+      <div class="search-results__item__wrapper" *ngFor="let recipe of (recipes$ | async).recipes; let i = index;" [ngClass]="{'selected': selectedRecipe === recipe }" (click)="selectedRecipe !== recipe ? selectedRecipe = recipe : selectedRecipe = null">
+        <div class="search-results__item">
+          <div class="search-results__image" [ngStyle]="{'background': 'url(' + recipe.imgUrl + ') '}">
+            <div class="search-results__icon__wrapper">
+              <i class="material-icons search-results__icon">favorite_border</i>
+            </div>
+            <div class="search-results__image__overlay"></div>
+          </div>
+          <label class="search-results__label"> {{ recipe.label }} </label>
+        </div>
+        <aside class="search-results__details-box">
+          <h5 class="search-results__details-box__title">{{ recipe.label }}</h5>
+          <h6 class="search-results__details-box__subtitle"><strong>Calories:</strong>  {{ recipe.calories | number }} </h6>
+          <h6 class="search-results__details-box__subtitle"><strong>Ingredients:</strong></h6>
+          <ul class="search-results__details-box__list">
+            <li class="search-results__details-box__list__item"  *ngFor="let ingredient of recipe.ingredients"> {{ ingredient }}</li>
+          </ul>
+          <a class="search-results__details-box__link" href="{{ recipe.url }}" target="_blank">{{ recipe.url }}</a>
+        </aside>
+      </div>
+    </section>
   </div>
 </section>

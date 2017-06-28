@@ -1,0 +1,16 @@
+.sidebar__container {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 0em;
+	background: rgba(255, 255, 255, 0.95);
+	border-left: 0px solid #000;
+	transition: all 0.2s ease-in-out;
+}
+
+.sidebar__container--visible{
+	width: 35em;
+	border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
