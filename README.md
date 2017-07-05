@@ -7,15 +7,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This is a demo project for Angular4 combined with ngrx (for state managing), and RxJS.
 
 ## TODO
-- add loader (with separate info for server response waiting, and frontend reaction) - (https://codepen.io/Sixclones/pen/vKVpOE),
-- change way how the recipe details appears,
+- add loader (with separate info for server response waiting, and frontend reaction) - (https://codepen.io/Sixclones/pen/vKVpOE), X
+- change way how the recipe details appears, X
 - add possibility to find more then 10 recipes,  
 - implement possibility of adding selected recipes into favorites,
 - add real documentation,
 - add first search and demo,
 - add contact page with contact form,
 - add some media queries and make design more responsive (especially for menu),
-- add page for "no resoults"
+- add page for "no resoults",
+- clear unused libaries and dependencies,
+- check 'using state as a collection' subject,
+- some cache adding 
 
 
 ## Development server

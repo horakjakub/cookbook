@@ -5,7 +5,7 @@ export interface State {
 }
 
 const initialState: State = {
-  showSidenav: false,
+  showSidenav: false
 };
 
 export function reducer(state = initialState, action: layout.Actions): State {

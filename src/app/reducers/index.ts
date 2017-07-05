@@ -32,17 +32,20 @@ import { combineReducers } from '@ngrx/store';
 import * as fromLayout from './layout';
 import * as fromSearch from './search';
 import * as fromRecipe from './recipe';
+import * as fromRecipesCollection from './recipesCollection';
 
 export interface State {
   layout: fromLayout.State;
   search: fromSearch.State;
-  currentRecipes: fromRecipe.State
+  currentRecipes: fromRecipe.State;
+  recipesCollection: fromRecipesCollection.State;
 }
 
 const reducers = {
   layout: fromLayout.reducer,
   search: fromSearch.reducer,
-  currentRecipes: fromRecipe.reducer
+  currentRecipes: fromRecipe.reducer,
+  recipesCollection: fromRecipesCollection.reducer
 };
 
 const developmentReducer: ActionReducer<State> = compose(storeFreeze, combineReducers)(reducers);
@@ -61,3 +64,5 @@ export const getSearchLoading = createSelector(getSearchState, fromSearch.getLoa
 
 export const getCurrentRecipesState = (state: State) => state.currentRecipes;
 export const getCurrentRecipes = createSelector(getCurrentRecipesState, fromRecipe.getRecipes);
+
+export const getCurrentCollection = (state: State) => state.recipesCollection;

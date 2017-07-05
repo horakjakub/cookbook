@@ -1,11 +1,12 @@
 <section class="main-view__background">
   <div class="main-view__container">
     <section class="search-results__container">
-      <div class="search-results__item__wrapper" *ngFor="let recipe of (recipes$ | async).recipes; let i = index;" [ngClass]="{'selected': selectedRecipe === recipe }" (click)="selectedRecipe !== recipe ? selectedRecipe = recipe : selectedRecipe = null">
+      <div class="search-results__item__wrapper" *ngFor="let recipe of (recipes$ | async).recipes; let i = index;" [ngClass]="{'search-results__item__wrapper--selected': selectedRecipe === recipe }" (click)="showRecipeDetails($event, recipe)">
         <div class="search-results__item">
           <div class="search-results__image" [ngStyle]="{'background': 'url(' + recipe.imgUrl + ') '}">
-            <div class="search-results__icon__wrapper">
-              <i class="material-icons search-results__icon">favorite_border</i>
+            <div class="search-results__icon__wrapper" (click)="toggleToFaviorites($event, recipe)" [ngClass]="{'search-results__icon__wrapper--favorite': isFavorite(recipe)}">
+              <i class="material-icons search-results__icon search-results__icon__favorite-border">favorite_border</i>
+              <i class="material-icons search-results__icon search-results__icon__favorite">favorite</i>
             </div>
             <div class="search-results__image__overlay"></div>
           </div>

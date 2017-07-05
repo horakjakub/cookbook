@@ -107,6 +107,10 @@
   transition: all 0.2s ease-in-out;
 }
 
+.menu__favorite__icon--alerting {
+  color: #B23400;
+}
+
 .menu__favorite__icon--selected {
   color: #00B298;
 }

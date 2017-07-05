@@ -1,2 +1,31 @@
 <div class="sidebar__container" [ngClass]="{'sidebar__container--visible': (showSidenav$ | async )}">
+  <div class="sidebar__content">
+    <div class="favorites-list__container" *ngFor="let recipe of favoritesRecipes; let i = index;" [ngClass]="{ 'favorites-list__container--selected': isRecipeExpanded(recipe) }">
+        <header class="favorites-list__header" (click)="toggleRecipe(recipe)">
+          <div class="favorites-list__icon__wrapper">
+              <i class="material-icons favorites-list__icon favorites-list__arrow-down__icon">keyboard_arrow_down</i>
+              <i class="material-icons favorites-list__icon favorites-list__arrow-up__icon">keyboard_arrow_up</i>
+          </div>
+          <div class="favorites-list__label">
+            {{ recipe.label }}
+          </div>
+          <div class="favorites-list__icon__wrapper">
+              <i class="material-icons favorites-list__icon favorites-list__close__icon" (click)="removeRecipeFromFavorites($event, recipe)">close</i>
+          </div>
+        </header>
+        <content class="favorites-list__content">
+            <div class="favorites-list__image" [ngStyle]="{'background-image': 'url(' + recipe.imgUrl + ') '}">
+              <div class="favorites-list__image__overlay"></div>
+            </div>
+            <div class="favorites-list__content-box">
+              <h6 class="favorites-list__subtitle"><strong>Calories:</strong>  {{ recipe.calories | number }} </h6>
+              <h6 class="favorites-list__subtitle"><strong>Ingredients:</strong></h6>
+              <ul class="favorites-list__sublist">
+                <li class="favorites-list__list__item"  *ngFor="let ingredient of recipe.ingredients"> {{ ingredient }}</li>
+              </ul>
+              <a class="favorites-list__link" href="{{ recipe.url }}" target="_blank">{{ recipe.url }}</a>
+          </div>
+        </content>
+    </div>
+  </div>
 </div>

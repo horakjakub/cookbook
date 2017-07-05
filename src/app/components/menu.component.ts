@@ -9,6 +9,8 @@ import * as layout from './../actions/layout';
 import * as search from './../actions/search';
 import { Observable } from 'rxjs/Observable';
 
+import { Recipe } from './../models/recipe';
+
 @Component({
   selector: 'menu',
   templateUrl: './menu.component.html',
@@ -30,6 +32,7 @@ export class MenuComponent {
   selectedPage:menuPageAdress = this.menuPages[0];
   showSidenav$: Observable<boolean>;
   sidebarVisibe: boolean = false;
+  favoritesRecipes: any;
 
   constructor(
     private router: Router,
@@ -37,6 +40,8 @@ export class MenuComponent {
     private store: Store<fromRoot.State>
     ){
     this.showSidenav$ = this.store.select(fromRoot.getShowSidenav);
+    this.showSidenav$.subscribe((val) => {this.sidebarVisibe = val})
+    this.store.select(fromRoot.getCurrentCollection).subscribe((favoriteRecipes) =>{ this.favoritesRecipes = Object.keys(favoriteRecipes) })
   }
 
   changePage(page: menuPageAdress): void {
@@ -45,16 +50,11 @@ export class MenuComponent {
   }
 
   toggleSidenav() {
-    let sidebarVisibe:boolean;
-    this.showSidenav$.subscribe((val) =>{ sidebarVisibe = val });
-
     if(!this.sidebarVisibe){
       this.store.dispatch(new layout.OpenSidenavAction());
     } else {
       this.store.dispatch(new layout.CloseSidenavAction());
     };
-
-    this.sidebarVisibe = !this.sidebarVisibe;
   }
 
   searchForm = new FormControl();
