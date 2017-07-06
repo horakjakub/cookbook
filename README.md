@@ -10,15 +10,15 @@ This is a demo project for Angular4 combined with ngrx (for state managing), and
 - add loader (with separate info for server response waiting, and frontend reaction) - (https://codepen.io/Sixclones/pen/vKVpOE), X
 - change way how the recipe details appears, X
 - add possibility to find more then 10 recipes,  
-- implement possibility of adding selected recipes into favorites,
+- implement possibility of adding selected recipes into favorites X,
 - add real documentation,
 - add first search and demo,
 - add contact page with contact form,
-- add some media queries and make design more responsive (especially for menu),
+- add some media queries and make design more responsive (especially for menu) X,
 - add page for "no resoults",
 - clear unused libaries and dependencies,
 - check 'using state as a collection' subject,
-- some cache adding 
+- some cache adding
 
 
 ## Development server

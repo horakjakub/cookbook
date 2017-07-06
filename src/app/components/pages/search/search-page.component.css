@@ -21,7 +21,6 @@
   margin: 0 5px;
 }
 
-
 /*--------------------- / .search-results__container / --------------------- */
 
 .search-results__container {
@@ -230,4 +229,10 @@
   font-size: 10em;
   color: rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .first-serarch-text__text {
+    font-size: 6em;
+  }
 }
