@@ -8,7 +8,7 @@
     </li>
   </ul>
   <div class="menu__search__container" *ngIf="selectedPage.title ===  'Search'">
-    <input [formControl]="searchForm" type="search" class="menu__search__input" placeholder="Start searching recipe here..." (keydown)="initSearchOnEnter($event)" />
+    <input [formControl]="searchForm" type="search" class="menu__search__input" placeholder="Find your favorite recipe" (keydown)="initSearchOnEnter($event)" />
     <button class="menu__search__button" (click)="search()">
       <i class="material-icons menu__search__icon">arrow_forward</i>
     </button>

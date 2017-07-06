@@ -19,6 +19,16 @@ export class SearchPageComponent {
   selectedRecipe: Recipe;
   favoritesRecipes: { [key: string]: Recipe };
   favoritesRecipes$: Observable<{ [key: string]: Recipe; }>;
+  welcomingTexts: string[] = [
+    '"Chocolate", "chocolate", "chocolate".',
+    '"Lemon" flavor for a warm day',
+    '"Strawberries" or "champagne"?',
+    'Need an idea for a "cake"?',
+    'Maybe "beef" with "mint"?',
+    'Something delicious from the "grill"?'
+  ];
+
+  selectedWelcomeText: string;
 
   constructor(
     private _store: Store<any>
@@ -28,7 +38,10 @@ export class SearchPageComponent {
     this.favoritesRecipes$.subscribe((recipesCollection)=>{
       this.favoritesRecipes = recipesCollection;
     })
+
+    this.selectedWelcomeText = this.welcomingTexts[Math.round(Math.random() * 5)];
   }
+
 
   showRecipeDetails(event, recipe){
     this.selectedRecipe !== recipe ? this.selectedRecipe = recipe : false;

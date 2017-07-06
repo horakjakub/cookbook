@@ -1,5 +1,10 @@
 <section class="main-view__background">
   <div class="main-view__container">
+    <section class="first-serarch-text__background" [ngClass]="{ 'first-serarch-text__background--visible': (recipes$ | async).recipes.length === 0 }">
+      <div class="first-serarch-text__text">
+        {{ selectedWelcomeText }}
+      </div>
+    </section>
     <section class="search-results__container">
       <div class="search-results__item__wrapper" *ngFor="let recipe of (recipes$ | async).recipes; let i = index;" [ngClass]="{'search-results__item__wrapper--selected': selectedRecipe === recipe }" (click)="showRecipeDetails($event, recipe)">
         <div class="search-results__item">
@@ -23,5 +28,6 @@
         </aside>
       </div>
     </section>
+
   </div>
 </section>
