@@ -20,12 +20,12 @@ export class SearchPageComponent {
   favoritesRecipes: { [key: string]: Recipe };
   favoritesRecipes$: Observable<{ [key: string]: Recipe; }>;
   welcomingTexts: string[] = [
-    '"Chocolate", "chocolate", "chocolate".',
-    '"Lemon" flavor for a warm day',
+    '"Chocolate", "chocolate", "chocolate"...',
+    '"Lemon" flavor for a warm day?',
     '"Strawberries" or "champagne"?',
     'Need an idea for a "cake"?',
-    'Maybe "beef" with "mint"?',
-    'Something delicious from the "grill"?'
+    'Maybe some "beef" with "mint"?',
+    'Something delicious from "grill"?'
   ];
 
   selectedWelcomeText: string;

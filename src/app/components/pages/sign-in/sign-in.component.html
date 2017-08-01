@@ -1,0 +1,29 @@
+<section class="main-view__background">
+  <div class="main-view__container">
+    <div class="login__wrapper">
+        <form [formGroup]="signInForm" class="login__form" *ngIf="loginVisible" (ngSubmit)="signInSubmit()">
+            <input id="signinEmailInput" type="text" class="text-input login__text-input" placeholder="Email"
+                   formControlName="email" [ngClass]="{ 'text-input--error': signInForm.get('email').status === 'INVALID' && !signInForm.get('email').untouched }" />
+            <input id="signinPasswordInput" type="password" class="password-input login__password-input" placeholder="Password"
+                   formControlName="password" [ngClass]="{ 'text-input--error': signInForm.get('password').status === 'INVALID' && !signInForm.get('password').untouched}"/>
+            <button class="btn btn-primary login__button" type="submit" [disabled]="signInForm.status === 'INVALID'">SIGN IN</button>
+         </form>
+        <form [formGroup]="signUpForm" class="signup__form" *ngIf="!loginVisible" (ngSubmit)="signUpSubmit()">
+            <input id="signupUsernameInput" type="text" class="text-input signup__text-input" placeholder="Username"
+                   formControlName="username" [ngClass]="{ 'text-input--error': signUpForm.get('username').status === 'INVALID' && !signUpForm.get('username').untouched }" />
+            <input id="signupEmailInput" type="text" class="text-input  signup__text-input" placeholder="Email"
+                   formControlName="email" [ngClass]="{ 'text-input--error': signUpForm.get('email').status === 'INVALID' && !signUpForm.get('email').untouched }" />
+            <input id="signupPasswordInput" type="password" class="password-input signup__password-input" placeholder="Password*"
+                   formControlName="password" [ngClass]="{ 'text-input--error': (signUpForm.get('password').status === 'INVALID' && !signUpForm.get('password').untouched) || (!passwordsMatchedOrUnfilled() && !signUpForm.get('password').untouched)}" />
+            <input id="signupRetypePasswordInput" type="password" class="password-input signup__password-input" placeholder="Re-type password*"
+            formControlName="passwordRetyped" [ngClass]="{ 'text-input--error': signUpForm.get('passwordRetyped').status === 'INVALID' && !signUpForm.get('passwordRetyped').untouched || (!passwordsMatchedOrUnfilled() && !signUpForm.get('password').untouched)}" />
+            <button class="btn btn-primary signup__button" [disabled]="signUpForm.status === 'INVALID' || !passwordsMatched()">SIGN UP</button>
+            <p class="signup__input-helper">* password should have at least 6 characters and min. one number</p>
+        </form>
+        <div class="login__tabs-bar" >
+            <div class="login__tab-bar" [ngClass]="{'login__tab-bar--selected': loginVisible }" (click)="toggleTab()">SIGN IN</div>
+            <div class="login__tab-bar" [ngClass]="{'login__tab-bar--selected': !loginVisible }" (click)="toggleTab()">SIGN UP</div>
+        </div>
+    </div>
+  </div>
+</section>

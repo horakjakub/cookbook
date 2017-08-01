@@ -19,6 +19,7 @@ This is a demo project for Angular4 combined with ngrx (for state managing), and
 - clear unused libaries and dependencies,
 - check 'using state as a collection' subject,
 - some cache adding
+- remove @Import statement from CSS styles, 
 
 
 ## Development server

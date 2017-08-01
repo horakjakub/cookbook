@@ -1,12 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import * as fromRoot from './../reducers';
-import * as layout from './../actions/layout';
+import * as fromRoot from '../../../reducers';
 import { Observable } from 'rxjs/Observable';
-import { Recipe } from './../models/recipe';
-import * as recipesCollection from './../actions/recipesCollection';
+import { Recipe } from '../../../models/recipe';
+import * as recipesCollection from '../../../actions/recipesCollection';
 import * as _ from 'lodash';
-import { RECIPES } from './../services/recipes-mock.service'
+import { go } from '@ngrx/router-store';
+import * as layout from '../../../actions/layout';
 
 @Component({
         selector: 'sidebar',
@@ -19,6 +19,7 @@ export class SidebarComponent {
   favoritesRecipes$: Observable<{ [key: string]: Recipe; }>;
   favoritesRecipes: Recipe[];
   expandedRecipes: Recipe[] = [];
+  userLogged: boolean = false;
 
   constructor(private store: Store<fromRoot.State>) {
     this.showSidenav$ = this.store.select(fromRoot.getShowSidenav);
@@ -29,7 +30,7 @@ export class SidebarComponent {
     })
   }
 
-  toggleRecipe(recipe){
+  toggleRecipe(recipe): void {
     if(!this.isRecipeExpanded(recipe)){
       this.expandedRecipes.push(recipe)
     } else {
@@ -37,13 +38,13 @@ export class SidebarComponent {
     }
   }
 
-  removeRecipeFromFavorites(event, recipe){
+  removeRecipeFromFavorites(event, recipe): void {
     event.stopPropagation();
     this.store.dispatch(new recipesCollection.RemoveRescipeAction(recipe));
     this.expandedRecipes = this.expandedRecipes.filter((expendedRecipe) => { if(expendedRecipe.label !== recipe.label){ return expendedRecipe }});
   }
 
-  isRecipeExpanded(recipe){
+  isRecipeExpanded(recipe): boolean{
     if(this.expandedRecipes.filter((expendedRecipe) => { if(expendedRecipe.label === recipe.label){ return expendedRecipe }}).length !== 0){
       return true;
     } else {
@@ -51,7 +52,8 @@ export class SidebarComponent {
     }
   }
 
-  closeSidenav() {
+  goToSignIn():void {
+    this.store.dispatch(go('sign-in'));
     this.store.dispatch(new layout.CloseSidenavAction());
   }
 }

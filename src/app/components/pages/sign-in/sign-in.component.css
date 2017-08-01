@@ -1,0 +1,111 @@
+.main-view__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../../images/healthy-pasta-in-a-pan-by-foodies-feed-picjumbo-com.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main-view__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255, 0.5)
+}
+
+.main-view__btn {
+  margin: 0 5px;
+}
+
+.login__wrapper {
+}
+
+.login__form {
+  margin-top: 1em;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  padding: 2em 2.2em 1.4em;
+  background: rgba(255, 255, 255, 0.9);
+  width: 22em;
+}
+
+.login__form > input, .login__button {
+  margin: 0.2em 0;
+}
+
+.login__p, .signup__p {
+  margin: 0.3em 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.login__a {
+}
+
+.signup__form {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  padding: 2em 2.2em 1.4em;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.signup__form > input, .signup__button {
+  margin: 0.2em 0;
+}
+
+.signup__input-helper {
+  margin: 0.3em 0.2em;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.login__tabs-bar {
+  display: flex;
+}
+
+.login__tab-bar {
+  font-size: 1.3em;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.login__tab-bar:nth-of-type(1){
+  border-bottom-left-radius: 2px;
+}
+
+.login__tab-bar:nth-of-type(2){
+  border-bottom-right-radius: 2px;
+}
+
+.login__tab-bar:hover:not(.login__tab-bar--selected){
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.login__tab-bar--selected {
+  background: rgba(255, 255, 255, 0.9);
+}

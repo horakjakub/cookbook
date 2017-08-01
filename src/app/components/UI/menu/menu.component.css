@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.menu__list__wraper {
+  position: relative;
+}
+
 .menu__list {
   display: flex;
   list-style: none;
@@ -20,7 +24,7 @@
 .menu__item {
   font-size: 1.4em;
   color: rgba(0, 0, 0, 0.5);
-  padding: 1em 2em;
+  padding: 1.2em 2em;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
   font-weight: 600;
@@ -55,14 +59,23 @@
     flex-direction: column;
     background: #fff;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    z-index: 11px;
-    left: 0;
-    display: none;
+    z-index: 11;
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+  }
+
+  .menu__list > .menu__item {
+    transition: all 0.1s ease-in-out;
+    opacity: 0;
+    visibility: visible;
   }
 }
 
-@media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
   .menu__list__icon__wrapper {
+    visibility: hidden;
+    opacity: 0;
     display: none;
   }
 }
@@ -72,7 +85,13 @@
 }
 
 #menuVisibilityCheckbox:checked ~ .menu__list {
-  display: inline-flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+#menuVisibilityCheckbox:checked ~ .menu__list > .menu__item {
+  visibility: visible;
+  opacity: 1;
 }
 
 #menuVisibilityCheckbox:checked ~ .menu__list__icon__wrapper .menu__list__icon {
@@ -87,15 +106,14 @@
 
 .menu__search__input {
   background: rgba(255,255,255, 0);
-  border: 2px solid #ddd;
   font-size: 1.4em;
   padding: 0.3em 0.8em;
-  outline-color: rgba(0,0,0, 0.01);
   margin: 0.1em 0 0;
-  color: rgba(0, 0, 0, 0.6);
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   width: 20em;
+  border-radius: 0px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,16 +136,13 @@
 }
 
 .menu__search__button {
-  background: #00B298;
-  color: rgba(0, 0, 0, .4);
   display: inline-flex;
-  padding: 0.4em 0.5em 0.5em;
+  padding: 0.2em 0.5em;
   font-family: 'Open Sans', sans-serif;
-  border: 2px solid #00B298;
   cursor: pointer;
   margin: 0 0 0 0.5em;
-  outline: none;
-  transition: all 0.2s ease-in-out;
+  border-radius: 0px;
+  font-size: 1.3em;
 }
 
 .menu__search__icon {
@@ -137,10 +152,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.menu__search__button:hover {
-  background: #ddd;
-  border: 2px solid #ddd;
-}
 .menu__search__button:hover .menu__search__icon {
   color: #fff;
 }

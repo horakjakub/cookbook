@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormControl } from '@angular/forms';
-import { ApiService} from './../services/api.service'
+import { ApiService} from '../../../services/api.service';
 import { Store } from '@ngrx/store';
-import * as fromRoot from './../reducers';
+import { go } from '@ngrx/router-store';
 
-import * as layout from './../actions/layout';
-import * as search from './../actions/search';
+import * as fromRoot from '../../../reducers';
+import * as layout from '../../../actions/layout';
+import * as search from '../../../actions/search';
 import { Observable } from 'rxjs/Observable';
 
-import { Recipe } from './../models/recipe';
+import { Recipe } from '../../../models/recipe';
 
 @Component({
   selector: 'menu',
@@ -21,15 +22,20 @@ export class MenuComponent {
   menuPages:menuPageAdress[] = [
     {
       title: 'Search',
-      url: ''
+      url: 'search'
     },
     {
-      title: 'Contact',
-      url: 'contact'
-    }
+      title: 'Sign In',
+      url: 'sign-in'
+    },
+    // {
+    //   title: 'Contact',
+    //   url: 'contact'
+    // }
   ];
 
   selectedPage:menuPageAdress = this.menuPages[0];
+  selectedPage$: Observable<string>;
   showSidenav$: Observable<boolean>;
   sidebarVisibe: boolean = false;
   favoritesRecipes: any;
@@ -39,6 +45,7 @@ export class MenuComponent {
     private apiService: ApiService,
     private store: Store<fromRoot.State>
     ){
+    this.selectedPage$ = this.store.select('router');
     this.showSidenav$ = this.store.select(fromRoot.getShowSidenav);
     this.showSidenav$.subscribe((val) => {this.sidebarVisibe = val})
     this.store.select(fromRoot.getCurrentCollection).subscribe((favoriteRecipes) =>{ this.favoritesRecipes = Object.keys(favoriteRecipes) })
@@ -46,7 +53,7 @@ export class MenuComponent {
 
   changePage(page: menuPageAdress): void {
     this.selectedPage = page;
-    this.router.navigate([page.url]);
+    this.store.dispatch(go([page.url ]));
   }
 
   toggleSidenav() {

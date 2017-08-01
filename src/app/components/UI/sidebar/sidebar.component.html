@@ -1,0 +1,34 @@
+<div class="sidebar__container" [ngClass]="{'sidebar__container--visible': (showSidenav$ | async )}">
+  <div class="sidebar__content">
+    <header class="sidebar__header" *ngIf="!userLogged">
+      You are not signed in, so list of favorites will not be saved. We highly recommend to <a (click)="goToSignIn()">sign in</a>, to fully enjoy the app features.
+    </header>
+    <div class="favorites-list-item__container" *ngFor="let recipe of favoritesRecipes; let i = index;" [ngClass]="{ 'favorites-list-item__container--selected': isRecipeExpanded(recipe) }">
+        <header class="favorites-list-item__header" (click)="toggleRecipe(recipe)">
+          <div class="favorites-list-item__icon__wrapper">
+              <i class="material-icons favorites-list-item__icon favorites-list-item__arrow-down__icon">keyboard_arrow_down</i>
+              <i class="material-icons favorites-list-item__icon favorites-list-item__arrow-up__icon">keyboard_arrow_up</i>
+          </div>
+          <div class="favorites-list-item__label">
+            {{ recipe.label }}
+          </div>
+          <div class="favorites-list-item__icon__wrapper">
+              <i class="material-icons favorites-list-item__icon favorites-list-item__close__icon" (click)="removeRecipeFromFavorites($event, recipe)">close</i>
+          </div>
+        </header>
+        <content class="favorites-list-item__content">
+            <div class="favorites-list-item__image" [ngStyle]="{'background-image': 'url(' + recipe.imgUrl + ') '}">
+              <div class="favorites-list-item__image__overlay"></div>
+            </div>
+            <div class="favorites-list-item__content-box">
+              <h6 class="favorites-list-item__subtitle"><strong>Calories:</strong>  {{ recipe.calories | number }} </h6>
+              <h6 class="favorites-list-item__subtitle"><strong>Ingredients:</strong></h6>
+              <ul class="favorites-list-item__sublist">
+                <li class="favorites-list-item__list__item" *ngFor="let ingredient of recipe.ingredients"> {{ ingredient }}</li>
+              </ul>
+              <a class="favorites-list-item__link" href="{{ recipe.url }}" target="_blank">{{ recipe.url }}</a>
+          </div>
+      </content>
+    </div>
+  </div>
+</div>

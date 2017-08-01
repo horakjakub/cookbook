@@ -39,3 +39,83 @@ body {
 * {
 
 }
+/* ------------------------------------------------ */
+/* ------------- // GLOBAL UI STYLES // ----------- */
+/* ------------------------------------------------ */
+
+.text-input, .password-input {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  font-size: 1.4em;
+  padding: 0.4em 0.8em;
+  box-shadow: 0;
+  box-shadow: 1em;
+  border: 2px solid #ddd;
+  transition: 0.4s ease-in-out;
+  outline-color: rgba(0,0,0, 0.01);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.text-input:hover, .password-input:hover {
+  border: 2px solid #eee;
+}
+
+.text-input:active, .text-input:focus, .password-input:active, .password-input:focus {
+  border: 2px solid #eee;
+}
+
+.text-input--error {
+  border-color: #ffb190;
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-flex;
+  background: rgba(255, 255, 255, 1);
+  border: 2px solid #ddd;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.4em 3em;
+  color:  rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  outline-color: rgba(0,0,0, 0.01);
+  transition: 0.4s ease-in-out;
+  border-radius: 4px;
+  font-size: 1.4em;
+}
+
+.btn:active, .btn:focus, .btn:hover {
+  background: #ddd;
+  color: #fff;
+}
+
+.btn-primary {
+  background: #00B298;
+  border-color: #00B298;
+  color: #fff;
+}
+
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background: #39BFAB;
+  border-color: #39BFAB;
+  color: #fff;
+}
+.btn-primary:disabled, .btn-primary:disabled:active, .btn-primary:disabled:focus, .btn-primary:disabled:hover {
+  color: #989898;
+  background: #e1e1e1;
+  border-color: #e1e1e1;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  text-decoration: underline;
+  color: #00b0d5;
+  transition: 0.2s color ease-in-out;
+}
+
+a:hover {
+  color: #00CAF7;
+}

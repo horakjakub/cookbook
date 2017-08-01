@@ -8,16 +8,15 @@
     </div>
     <ul class="menu__list">
       <li class="menu__item" *ngFor="let page of menuPages"
-          (click)="changePage(page)" [ngClass]="{ 'menu__item--selected': selectedPage === page }"
-          [routerLink]="[page.url]"
+          (click)="changePage(page)" [ngClass]="{ 'menu__item--selected': (selectedPage$ | async).path === '/' + page.url }"
       >
       {{ page.title }}
       </li>
     </ul>
   </div>
-  <div class="menu__search__container" *ngIf="selectedPage.title ===  'Search'">
-    <input [formControl]="searchForm" type="search" class="menu__search__input" placeholder="Find your favorite recipe" (keydown)="initSearchOnEnter($event)" />
-    <button class="menu__search__button" (click)="search()">
+  <div class="menu__search__container" *ngIf="(selectedPage$ | async).path === '/search'">
+    <input [formControl]="searchForm" type="search" class="menu__search__input text-input" placeholder="Find your favorite recipe" (keydown)="initSearchOnEnter($event)" />
+    <button class="menu__search__button btn btn-primary" (click)="search()">
       <i class="material-icons menu__search__icon">arrow_forward</i>
     </button>
   </div>

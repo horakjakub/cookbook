@@ -21,33 +21,42 @@
 	margin: 5em 0 0 0;
 }
 
-/*------------------ / .favorites-list / -------------------*/
-.favorites-list__container--selected {
+.sidebar__header {
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 1.4em;
+	padding: 0.5em;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	background: rgba(240, 240, 240, 0.1);
+}
+
+/*------------------ / .favorites-list-item / -------------------*/
+.favorites-list-item__container--selected {
 	background: #fff;
 }
-.favorites-list__header {
+.favorites-list-item__header {
 	display: flex;
 	align-items: center;
 	transition: background 0.2s ease-in-out;
 	margin: 0;
 }
 
-.favorites-list__header:hover {
+.favorites-list-item__header:hover {
 	background: rgba(0, 0, 0, 0.01);
 }
 
-.favorites-list__container--selected .favorites-list__header {
+.favorites-list-item__container--selected .favorites-list-item__header {
 	background: rgba(0, 0, 0, 0.01);
 }
 
-.favorites-list__header:hover .favorites-list__arrow-down__icon, .favorites-list__header:hover .favorites-list__arrow-up__icon  {
+.favorites-list-item__header:hover .favorites-list-item__arrow-down__icon, .favorites-list-item__header:hover .favorites-list-item__arrow-up__icon  {
 	color: #B23400;
 }
-.favorites-list__header:hover .favorites-list__label {
+.favorites-list-item__header:hover .favorites-list-item__label {
 	color: #B23400;
 }
 
-.favorites-list__label {
+.favorites-list-item__label {
 	font-family: 'Open Sans', sans-serif;
 	flex: 1 1 auto;
 	font-size: 1.4em;
@@ -58,7 +67,7 @@
 	cursor: pointer;
 }
 
-.favorites-list__icon__wrapper {
+.favorites-list-item__icon__wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -66,68 +75,68 @@
 	cursor: pointer;
 }
 
-.favorites-list__icon {
+.favorites-list-item__icon {
 	font-size: 2.3em;
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.favorites-list__arrow-down__icon {
+.favorites-list-item__arrow-down__icon {
 	margin: 0.1em 0 0 0;
 	transition: color 0.2s ease-in-out;
 }
 
-.favorites-list__arrow-up__icon {
+.favorites-list-item__arrow-up__icon {
 	transition: color 0.2s ease-in-out;
 	display: none;
 	margin: 0 0 0.1em 0;
 }
 
-.favorites-list__close__icon {
+.favorites-list-item__close__icon {
 	font-size: 1.2em;
 	padding: 0.2em;
 	transition: all 0.4s ease-in-out;
 	border-radius: 10px;
 }
 
-.favorites-list__close__icon:hover {
+.favorites-list-item__close__icon:hover {
 	background: rgba(0, 0, 0, 0.1);
 	color: #fff;
 }
 
-.favorites-list__container--selected .favorites-list__label {
+.favorites-list-item__container--selected .favorites-list-item__label {
 	color: #B23400;
 }
 
-.favorites-list__container--selected .favorites-list__header {
+.favorites-list-item__container--selected .favorites-list-item__header {
 	/*background: #fff;*/
 }
 
-.favorites-list__container--selected .favorites-list__arrow-down__icon {
+.favorites-list-item__container--selected .favorites-list-item__arrow-down__icon {
 	display: none;
 }
 
-.favorites-list__container--selected .favorites-list__arrow-up__icon {
+.favorites-list-item__container--selected .favorites-list-item__arrow-up__icon {
 	display: block;
 }
 
-/*.favorites-list__content / -------------------*/
+/*.favorites-list-item__content / -------------------*/
 
-.favorites-list__content {
+.favorites-list-item__content {
 	border-top: 2px solid rgba(0, 0, 0, 0.1);
 	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 	display: none;
 }
 
-.favorites-list__container.favorites-list__container--selected .favorites-list__content {
+.favorites-list-item__container.favorites-list-item__container--selected .favorites-list-item__content {
 	display: block;
 }
 
-.favorites-list__content-box {
+.favorites-list-item__content-box {
 	border-top: 2px solid rgba(0, 0, 0, 0.1);
 	padding: 0.8em 1.5em;
 }
 
-.favorites-list__subtitle {
+.favorites-list-item__subtitle {
 	margin: 0.6em 0;
 	padding: 0;
 	font-family: 'Open Sans', sans-serif;
@@ -135,25 +144,25 @@
 	color: rgba(0, 0, 0, 0.8);
 }
 
-.favorites-list__sublist {
+.favorites-list-item__sublist {
 	list-style: disc;
   padding-left: 1.8em;
   margin: 1.2em 0 1.4em 0;
 	color: rgba(0, 0, 0, 0.8);
 }
 
-.favorites-list__list__item {
+.favorites-list-item__list__item {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3em;
 	color: rgba(0, 0, 0, 0.7);
 }
 
-.favorites-list__link {
+.favorites-list-item__link {
 	margin: 0 0 0 0;
 	display: block;
 }
 
-.favorites-list__image {
+.favorites-list-item__image {
 	position: relative;
 	width: 100%;
 	height: 19em;
@@ -164,7 +173,7 @@
 	background-position: center;
 }
 
-.favorites-list__image__overlay {
+.favorites-list-item__image__overlay {
 	position: absolute;
 	z-index: 1;
 	width: 100%;

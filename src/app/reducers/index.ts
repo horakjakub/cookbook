@@ -2,6 +2,7 @@ import { createSelector } from 'reselect';
 import { ActionReducer } from '@ngrx/store';
 import * as fromRouter from '@ngrx/router-store';
 
+
 /**
  * The compose function is one of our most handy tools. In basic terms, you give
  * it any number of functions and it returns a function. This new function
@@ -39,13 +40,15 @@ export interface State {
   search: fromSearch.State;
   currentRecipes: fromRecipe.State;
   recipesCollection: fromRecipesCollection.State;
+  router: fromRouter.RouterState;
 }
 
 const reducers = {
   layout: fromLayout.reducer,
   search: fromSearch.reducer,
   currentRecipes: fromRecipe.reducer,
-  recipesCollection: fromRecipesCollection.reducer
+  recipesCollection: fromRecipesCollection.reducer,
+  router: fromRouter.routerReducer,
 };
 
 const developmentReducer: ActionReducer<State> = compose(storeFreeze, combineReducers)(reducers);

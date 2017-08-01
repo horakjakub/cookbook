@@ -6,7 +6,7 @@ import { HttpModule, JsonpModule, Jsonp, Response } from '@angular/http';
 // ---------------- ngrx  ------------------- //
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule, Actions } from '@ngrx/effects';
-import { RouterStoreModule } from '@ngrx/router-store';
+import { routerReducer, RouterStoreModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 // ---------------- routing  ---------------------- //
@@ -15,13 +15,15 @@ import { routes } from './routes';
 
 // ---------------- components  ---------------------- //
 import { AppComponent } from './components/app.component';
-import { MenuComponent } from './components/menu.component';
-import { AutocompleteComponent } from './components/autocomplete.component';
+import { MenuComponent } from './components/UI/menu/menu.component';
+import { AutocompleteComponent } from './components/UI/autocomplete/autocomplete.component';
+import { SidebarComponent } from './components/UI/sidebar/sidebar.component';
+import { LoaderComponent } from './components/UI/loader/loader.component';
+
 import { SearchPageComponent } from './components/pages/search/search-page.component';
 import { ContactPageComponent } from './components/pages/contact/contact-page.component';
-import { SidebarComponent } from './components/sidebar.component';
-import { LoaderComponent } from './components/UI/loader.component';
 
+import { SignInPageComponent } from './components/pages/sign-in/sign-in.component';
 
 // ---------------- directives  ---------------- //
 import { SearchDirective } from './directives/search.directive'
@@ -38,9 +40,14 @@ import { reducer } from './reducers';
     BrowserModule,
     ReactiveFormsModule,
     HttpModule,
-    StoreModule.provideStore(reducer),
+    StoreModule.provideStore(reducer, {
+      router: {
+        path: window.location.pathname + window.location.search
+      }
+    }),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
     RouterModule.forRoot(routes, { useHash: true }),
+    RouterStoreModule.connectRouter(),
     JsonpModule,
     EffectsModule.run(ApiService)
   ],
@@ -52,7 +59,8 @@ import { reducer } from './reducers';
     ContactPageComponent,
     SearchDirective,
     SidebarComponent,
-    LoaderComponent
+    LoaderComponent,
+    SignInPageComponent
   ],
   providers: [
     JsonpRequestService,
