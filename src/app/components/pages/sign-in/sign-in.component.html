@@ -7,7 +7,9 @@
             <input id="signinPasswordInput" type="password" class="password-input login__password-input" placeholder="Password"
                    formControlName="password" [ngClass]="{ 'text-input--error': signInForm.get('password').status === 'INVALID' && !signInForm.get('password').untouched}"/>
             <button class="btn btn-primary login__button" type="submit" [disabled]="signInForm.status === 'INVALID'">SIGN IN</button>
-         </form>
+            <p class="signin__input-helper signin__validation-comm" [ngClass]="{'signin__validation-comm--visible': signInValidationInfo !== undefined && signInValidationInfo.length > 0 }">{{ signInValidationInfo }}</p>
+        </form>
+        <!--<button class="btn btn-primary login__button" (click)="test()">TEST</button>-->
         <form [formGroup]="signUpForm" class="signup__form" *ngIf="!loginVisible" (ngSubmit)="signUpSubmit()">
             <input id="signupUsernameInput" type="text" class="text-input signup__text-input" placeholder="Username"
                    formControlName="username" [ngClass]="{ 'text-input--error': signUpForm.get('username').status === 'INVALID' && !signUpForm.get('username').untouched }" />

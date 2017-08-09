@@ -1,5 +1,15 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidatorFn } from '@angular/forms';
+import { Actions, toPayload } from '@ngrx/effects';
+import { Store } from '@ngrx/store';
+import { IUser } from './../../../models/user';
+import { SignInAction, SIGN_IN, SIGN_IN_SUCCESS } from './../../../actions/sign-in';
+import { SignUpAction } from './../../../actions/sign-up';
+import { ShowAlertAction } from './../../../actions/layout';
+import * as fromRoot from '../../../reducers';
+import { Observable } from 'rxjs/Observable';
+
+
 
 @Component({
   templateUrl: './sign-in.component.html',
@@ -10,17 +20,34 @@ export class SignInPageComponent {
   loginVisible:boolean = true;
   signInForm: FormGroup;
   signUpForm: FormGroup;
+  signInValidationInfo: string;
   emailRegEx: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  signInError$: Observable<any>;
+  signUpValue$: Observable<any>;
 
-  constructor(private formBuilder: FormBuilder){
+  constructor(private formBuilder: FormBuilder, private store: Store<fromRoot.State>, private actions$: Actions){
     this.createSignInForm();
     this.createSignUpForm();
+
+    this.signInError$ = this.store.select(fromRoot.getSignInMessageStatus).skip(1);
+    this.signInError$.subscribe((val)=>{ this.signInErrorMessagesFactory(val)});
+
+
+    this.signUpValue$ = this.store.select(fromRoot.getSignedUpState).skip(1);
+    this.signUpValue$.subscribe((val)=>{
+      if(val.errorOccurred){
+        this.signUpErrorMessagesFactory(val.statusMessage);
+      } else {
+        this.showMessageWithSuccessfulSigningUp();
+      }
+    });
   }
 
   toggleTab(){
     this.loginVisible = this.loginVisible ? false : true;
     this.signInForm.reset();
     this.signUpForm.reset();
+    this.signInValidationInfo = '';
   }
 
   createSignInForm(){
@@ -65,12 +92,44 @@ export class SignInPageComponent {
     return passwordsMatched;
   }
 
+  showMessageWithSuccessfulSigningUp(){
+    this.store.dispatch(new ShowAlertAction({
+      header: 'Signing up finished successfully',
+      message: 'Please go to your email account, and confirm address.'
+    }));
+
+    this.toggleTab();
+  }
+
   signInSubmit() {
-    debugger;
+    const signInUserData: IUser = {
+      username: '',
+      email: this.signInForm.value.email,
+      password: this.signInForm.value.password
+    };
+
+    this.store.dispatch(new SignInAction(signInUserData));
   }
 
   signUpSubmit(){
-    debugger;
+    const signUpUserData: IUser = {
+      username: this.signUpForm.value.username,
+      email: this.signUpForm.value.email,
+      password: this.signUpForm.value.password
+    };
+
+    this.store.dispatch(new SignUpAction(signUpUserData));
+  }
+
+  signInErrorMessagesFactory(error: any){
+    if(error.status === 401){
+      this.signInValidationInfo = 'Provided email or password is incorrect.';
+    } else if(error.status === 406){
+      this.signInValidationInfo = 'User has unactive account. Please go to your email and confirm it.';
+    }
+  }
+
+  signUpErrorMessagesFactory(error: any){
   }
 }
 

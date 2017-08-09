@@ -1,0 +1,13 @@
+<div class="alert__background" [ngClass]="{'alert__background--visible': (alertVisible$ | async) }" (click)="closeAlert($event)">
+  <div class="alert__container">
+    <header class="alert__header" *ngIf=" alertHeader.length > 0">
+      {{ alertHeader }}
+    </header>
+    <section class="alert__message">
+      {{ alertMessage }}
+    </section>
+    <div class="btn btn-primary alert__button" (click)="closeAlert($event)">
+      OK
+    </div>
+  </div>
+</div>

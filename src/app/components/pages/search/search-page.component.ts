@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RECIPES } from './../../../services/recipes-mock.service'
-import { Recipe } from './../../../models/recipe'
+import { IRecipe } from './../../../models/recipe'
 
 import { Store } from '@ngrx/store';
 import * as fromRoot from './../../../reducers';
@@ -8,6 +8,7 @@ import * as layout from './../../../actions/layout';
 import * as search from './../../../actions/search';
 import * as recipesCollection from './../../../actions/recipesCollection';
 import { Observable } from 'rxjs/Observable';
+import * as  _ from 'lodash';
 
 @Component({
   templateUrl: './search-page.component.html',
@@ -15,10 +16,10 @@ import { Observable } from 'rxjs/Observable';
 })
 
 export class SearchPageComponent {
-  recipes$: Observable<Recipe[]>;
-  selectedRecipe: Recipe;
-  favoritesRecipes: { [key: string]: Recipe };
-  favoritesRecipes$: Observable<{ [key: string]: Recipe; }>;
+  recipes$: Observable<IRecipe[]>;
+  selectedRecipe: IRecipe;
+  favoritesRecipes: IRecipe[];
+  favoritesRecipes$: Observable<IRecipe[]>;
   welcomingTexts: string[] = [
     '"Chocolate", "chocolate", "chocolate"...',
     '"Lemon" flavor for a warm day?',
@@ -26,7 +27,7 @@ export class SearchPageComponent {
     'Need an idea for a "cake"?',
     'Maybe some "beef" with "mint"?',
     'Something delicious from "grill"?'
-  ];
+];
 
   selectedWelcomeText: string;
 
@@ -34,10 +35,10 @@ export class SearchPageComponent {
     private _store: Store<any>
   ){
     this.recipes$ = this._store.select('currentRecipes');
-    this.favoritesRecipes$ = this._store.select(fromRoot.getCurrentCollection);
+    this.favoritesRecipes$ = this._store.select(fromRoot.getRecipesCollection);
     this.favoritesRecipes$.subscribe((recipesCollection)=>{
       this.favoritesRecipes = recipesCollection;
-    })
+    });
 
     this.selectedWelcomeText = this.welcomingTexts[Math.round(Math.random() * 5)];
   }
@@ -50,17 +51,13 @@ export class SearchPageComponent {
   toggleToFaviorites(event, recipe){
     event.stopPropagation();
     if(!this.isFavorite(recipe)){
-      this._store.dispatch(new recipesCollection.AddRescipeAction(recipe));
+      this._store.dispatch(new recipesCollection.AddRecipeAction(recipe));
     } else {
-      this._store.dispatch(new recipesCollection.RemoveRescipeAction(recipe));
+      this._store.dispatch(new recipesCollection.RemoveRecipeAction(recipe));
     }
   }
 
   isFavorite(recipe){
-    if(recipe.label in this.favoritesRecipes){
-      return true;
-    } else {
-      return false;
-    }
+    return _.some(this.favoritesRecipes, recipe);
   }
 }

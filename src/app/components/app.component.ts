@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
     <router-outlet></router-outlet>
     <sidebar></sidebar>
     <loader></loader>
+    <alert></alert>
   `
 })
 

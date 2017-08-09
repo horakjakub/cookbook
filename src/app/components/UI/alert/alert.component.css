@@ -1,0 +1,57 @@
+.alert__background {
+	position: absolute;
+	z-index: 11;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	transition: all 0.4s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.alert__background--visible {
+	visibility: visible;
+	display: block;
+	opacity: 1;
+}
+
+.alert__container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255, 255, 255, 1);
+	min-width: 14em;
+	max-width: 40em;
+	display: flex;
+	flex-direction: column;
+}
+
+.alert__message {
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
+	padding: 1em;
+	font-size: 1.6em;
+	border-bottom: 1px solid #F2F2F2;
+	text-align: center;
+}
+
+.alert__button {
+	margin: 0.5em auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6em;
+	justify-content: center;
+	align-items: center;
+}
+
+.alert__header {
+	font-family: 'Open Sans', sans-serif;
+	color: #999;
+	padding: 0.9em 1.2em;
+	font-size: 1.6em;
+	border-bottom: 1px solid #F2F2F2;
+	text-align: center;
+	font-weight: bold;
+}

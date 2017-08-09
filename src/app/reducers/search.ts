@@ -4,7 +4,7 @@ export interface State {
   labels: string[];
   loading: boolean;
   query: string;
-};
+}
 
 const initialState: State = {
   labels: [],
@@ -46,7 +46,6 @@ export function reducer(state = initialState, action: search.Actions): State {
     }
   }
 }
-
 
 export const getLabels = (state: State) => state.labels;
 export const getQuery = (state: State) => state.query;

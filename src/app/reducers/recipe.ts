@@ -1,8 +1,8 @@
 import * as search from '../actions/search';
-import { Recipe } from '../models/recipe';
+import { IRecipe } from '../models/recipe';
 
 export interface State {
-  recipes: Recipe[];
+  recipes: IRecipe[];
 };
 
 const initialState: State = {

@@ -1,6 +1,6 @@
 <div class="sidebar__container" [ngClass]="{'sidebar__container--visible': (showSidenav$ | async )}">
   <div class="sidebar__content">
-    <header class="sidebar__header" *ngIf="!userLogged">
+    <header class="sidebar__header" *ngIf="!signedIn">
       You are not signed in, so list of favorites will not be saved. We highly recommend to <a (click)="goToSignIn()">sign in</a>, to fully enjoy the app features.
     </header>
     <div class="favorites-list-item__container" *ngFor="let recipe of favoritesRecipes; let i = index;" [ngClass]="{ 'favorites-list-item__container--selected': isRecipeExpanded(recipe) }">

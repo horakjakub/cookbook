@@ -1,4 +1,4 @@
-export class Recipe {
+export interface IRecipe {
   label: string;
   ingredients: string[];
   imgUrl: string;

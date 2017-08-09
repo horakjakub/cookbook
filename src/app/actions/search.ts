@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Recipe } from '../models/recipe';
+import { IRecipe } from '../models/recipe';
 
 export const SEARCH =           '[Recipe] Search';
 export const SEARCH_COMPLETE =  '[Recipe] Search Complete';
@@ -13,7 +13,7 @@ export class SearchAction implements Action {
 export class SearchCompleteAction implements Action {
  readonly type = SEARCH_COMPLETE;
 
- constructor(public payload: Recipe[]) { }
+ constructor(public payload: IRecipe[]) { }
 }
 
 export type Actions

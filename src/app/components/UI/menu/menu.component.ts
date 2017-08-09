@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormControl } from '@angular/forms';
-import { ApiService} from '../../../services/api.service';
 import { Store } from '@ngrx/store';
 import { go } from '@ngrx/router-store';
 
@@ -10,7 +9,7 @@ import * as layout from '../../../actions/layout';
 import * as search from '../../../actions/search';
 import { Observable } from 'rxjs/Observable';
 
-import { Recipe } from '../../../models/recipe';
+import { IRecipe } from '../../../models/recipe';
 
 @Component({
   selector: 'menu',
@@ -34,25 +33,32 @@ export class MenuComponent {
     // }
   ];
 
-  selectedPage:menuPageAdress = this.menuPages[0];
   selectedPage$: Observable<string>;
+  signedIn$: Observable<boolean>;
   showSidenav$: Observable<boolean>;
   sidebarVisibe: boolean = false;
   favoritesRecipes: any;
 
   constructor(
     private router: Router,
-    private apiService: ApiService,
     private store: Store<fromRoot.State>
     ){
     this.selectedPage$ = this.store.select('router');
     this.showSidenav$ = this.store.select(fromRoot.getShowSidenav);
+    this.signedIn$ = this.store.select(fromRoot.getSignInStatus);
+    this.signedIn$.subscribe((val) => {
+      if(val === true){
+        this.store.dispatch(go(['search']));
+        this.store.dispatch(new layout.OpenSidenavAction());
+      }
+    });
     this.showSidenav$.subscribe((val) => {this.sidebarVisibe = val})
-    this.store.select(fromRoot.getCurrentCollection).subscribe((favoriteRecipes) =>{ this.favoritesRecipes = Object.keys(favoriteRecipes) })
+    this.store.select(fromRoot.getRecipesCollection).subscribe((favoriteRecipes) =>{
+      this.favoritesRecipes = favoriteRecipes
+    })
   }
 
-  changePage(page: menuPageAdress): void {
-    this.selectedPage = page;
+    changePage(page: menuPageAdress): void {
     this.store.dispatch(go([page.url ]));
   }
 
@@ -61,7 +67,7 @@ export class MenuComponent {
       this.store.dispatch(new layout.OpenSidenavAction());
     } else {
       this.store.dispatch(new layout.CloseSidenavAction());
-    };
+    }
   }
 
   searchForm = new FormControl();

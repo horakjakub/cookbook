@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as fromRoot from '../../../reducers';
 import { Observable } from 'rxjs/Observable';
-import { Recipe } from '../../../models/recipe';
+import { IRecipe } from '../../../models/recipe';
 import * as recipesCollection from '../../../actions/recipesCollection';
 import * as _ from 'lodash';
 import { go } from '@ngrx/router-store';
@@ -16,19 +16,27 @@ import * as layout from '../../../actions/layout';
 
 export class SidebarComponent {
   showSidenav$: Observable<boolean>;
-  favoritesRecipes$: Observable<{ [key: string]: Recipe; }>;
-  favoritesRecipes: Recipe[];
-  expandedRecipes: Recipe[] = [];
+  favoritesRecipes$: Observable<IRecipe[]>;
+  signedIn$: Observable<boolean>;
+  favoritesRecipes: IRecipe[];
+  signedIn: boolean;
+
+  expandedRecipes: IRecipe[] = [];
   userLogged: boolean = false;
 
   constructor(private store: Store<fromRoot.State>) {
     this.showSidenav$ = this.store.select(fromRoot.getShowSidenav);
-    this.favoritesRecipes$ = this.store.select(fromRoot.getCurrentCollection);
+    this.favoritesRecipes$ = this.store.select(fromRoot.getRecipesCollection);
+    this.signedIn$ = this.store.select(fromRoot.getSignInStatus);
 
     this.favoritesRecipes$.subscribe((recipesCollection)=>{
-      this.favoritesRecipes = _.values(recipesCollection);
-    })
-  }
+      this.favoritesRecipes = recipesCollection;
+    });
+
+    this.signedIn$.subscribe((signInState)=>{
+      this.signedIn = signInState;
+    });
+}
 
   toggleRecipe(recipe): void {
     if(!this.isRecipeExpanded(recipe)){
@@ -40,7 +48,7 @@ export class SidebarComponent {
 
   removeRecipeFromFavorites(event, recipe): void {
     event.stopPropagation();
-    this.store.dispatch(new recipesCollection.RemoveRescipeAction(recipe));
+    this.store.dispatch(new recipesCollection.RemoveRecipeAction(recipe));
     this.expandedRecipes = this.expandedRecipes.filter((expendedRecipe) => { if(expendedRecipe.label !== recipe.label){ return expendedRecipe }});
   }
 

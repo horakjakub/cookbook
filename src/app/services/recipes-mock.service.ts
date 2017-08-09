@@ -1,7 +1,7 @@
  // val.hits.map(item => item.recipe).map(item =>{ let recipe = {}; recipe.imgUrl = item.image; recipe.calories = item.calories; recipelabel= itemlabel recipeurl= itemurl recipeingredients= item.ingredientLines; return recipe })
-import { Recipe } from './../models/recipe';
+import { IRecipe } from './../models/recipe';
 
-export const RECIPES: Array<Recipe> =  [
+export const RECIPES: Array<IRecipe> =  [
     {
       imgUrl:"https://www.edamam.com/web-img/18d/18dcf05995cb40e8ce4c077972341d7a.jpg",
       calories: 7045.096938934326,

@@ -1,7 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
+// ---------------- angular  ------------------- //
+
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule, Jsonp, Response } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
+import { JsonpModule } from '@angular/http';
 
 // ---------------- ngrx  ------------------- //
 import { StoreModule } from '@ngrx/store';
@@ -15,22 +18,24 @@ import { routes } from './routes';
 
 // ---------------- components  ---------------------- //
 import { AppComponent } from './components/app.component';
+
 import { MenuComponent } from './components/UI/menu/menu.component';
 import { AutocompleteComponent } from './components/UI/autocomplete/autocomplete.component';
 import { SidebarComponent } from './components/UI/sidebar/sidebar.component';
 import { LoaderComponent } from './components/UI/loader/loader.component';
+import { AlertComponent } from './components/UI/alert/alert.component';
 
 import { SearchPageComponent } from './components/pages/search/search-page.component';
 import { ContactPageComponent } from './components/pages/contact/contact-page.component';
-
 import { SignInPageComponent } from './components/pages/sign-in/sign-in.component';
 
 // ---------------- directives  ---------------- //
 import { SearchDirective } from './directives/search.directive'
 
 // ------------------ // http services // ------------------------//
-import { ApiService} from './services/api.service'
+import { HttpApiEffectsService} from './services/http-api.effects'
 import { JsonpRequestService } from './services/jsonp-request.service';
+import { NodeCookbookRequestsFactory } from './services/node-cookbook-requests.factory';
 
 // ------------------- // state managing // -------------------- //
 import { reducer } from './reducers';
@@ -39,7 +44,6 @@ import { reducer } from './reducers';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpModule,
     StoreModule.provideStore(reducer, {
       router: {
         path: window.location.pathname + window.location.search
@@ -49,7 +53,8 @@ import { reducer } from './reducers';
     RouterModule.forRoot(routes, { useHash: true }),
     RouterStoreModule.connectRouter(),
     JsonpModule,
-    EffectsModule.run(ApiService)
+    HttpClientModule,
+    EffectsModule.run(HttpApiEffectsService)
   ],
   declarations: [
     AppComponent,
@@ -60,11 +65,12 @@ import { reducer } from './reducers';
     SearchDirective,
     SidebarComponent,
     LoaderComponent,
-    SignInPageComponent
+    SignInPageComponent,
+    AlertComponent
   ],
   providers: [
     JsonpRequestService,
-    ApiService,
+    NodeCookbookRequestsFactory,
     Actions
   ],
   bootstrap: [AppComponent]

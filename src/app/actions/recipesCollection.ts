@@ -1,48 +1,45 @@
 import { Action } from '@ngrx/store';
-import { Recipe } from '../models/recipe';
+import { IRecipe } from '../models/recipe';
 
-export const ADD_RECIPE =             '[Recipes Collection] Add Recipe';
-export const ADD_RECIPE_SUCCESS =     '[Recipes Collection] Add Recipe Success';
-export const ADD_RECIPE_FAIL =        '[Recipes Collection] Add Recipe Fail';
-export const REMOVE_RECIPE =             '[Recipes Collection] Remove Recipe';
-export const REMOVE_RECIPE_SUCCESS =     '[Recipes Collection] Remove Recipe Success';
-export const REMOVE_RECIPE_FAIL =        '[Recipes Collection] Remove Recipe Fail';
+export const ADD_RECIPE =                 '[Recipes Collection] Add Recipe';
+export const REMOVE_RECIPE =              '[Recipes Collection] Remove Recipe';
+export const MERGE_COLLECTIONS =          '[Recipes Collection] Merge Recipes Collections';
+export const SYNCHRONISE_RECIPES_COLLECTION =  '[Recipes Collection] Recipe Collection Synchronising Started';
+export const SYNCHRONISE_RECIPES_COLLECTION_SUCCESS =  '[Recipes Collection] Recipe Collection Synchronising Succeed';
+export const SYNCHRONISE_RECIPES_COLLECTION_FAIL =  '[Recipes Collection] Recipe Collection Synchronising Failed';
 
-export class AddRescipeAction implements Action {
+export class AddRecipeAction implements Action {
  readonly type = ADD_RECIPE;
- constructor(public payload: Recipe) { }
+ constructor(public payload: IRecipe) { }
 }
 
-export class AddRecipeSuccesAction implements Action {
- readonly type = ADD_RECIPE_SUCCESS;
- constructor(public payload: Recipe) { }
-}
-
-export class AddRecipeFailAction implements Action {
- readonly type = ADD_RECIPE_FAIL;
- constructor(public payload: string) { }
-}
-
-export class RemoveRescipeAction implements Action {
+export class RemoveRecipeAction implements Action {
  readonly type = REMOVE_RECIPE;
- constructor(public payload: Recipe) { }
+ constructor(public payload: IRecipe) { }
 }
 
-export class RemoveRecipeSuccesAction implements Action {
- readonly type = REMOVE_RECIPE_SUCCESS;
- constructor(public payload: Recipe) { }
+export class MergeCollectionsAction implements Action {
+ readonly type = MERGE_COLLECTIONS;
+ constructor(public payload: IRecipe[]) { }
 }
 
-export class RemoveRecipeFailAction implements Action {
- readonly type = REMOVE_RECIPE_FAIL;
- constructor(public payload: string) { }
+export class SynchroniseRecipesCollectionAction implements Action {
+ readonly type = SYNCHRONISE_RECIPES_COLLECTION;
 }
 
+export class SynchroniseRecipesCollectionSuccessAction implements Action {
+ readonly type = SYNCHRONISE_RECIPES_COLLECTION_SUCCESS;
+}
+
+export class SynchroniseRecipesCollectionFailAction implements Action {
+ readonly type = SYNCHRONISE_RECIPES_COLLECTION_FAIL;
+}
 
 export type Actions
- = AddRescipeAction
- | AddRecipeSuccesAction
- | AddRecipeFailAction
- | RemoveRescipeAction
- | RemoveRecipeSuccesAction
- | RemoveRecipeFailAction;
+ = AddRecipeAction
+ | RemoveRecipeAction
+ | MergeCollectionsAction
+ | SynchroniseRecipesCollectionAction
+ | SynchroniseRecipesCollectionSuccessAction
+ | SynchroniseRecipesCollectionFailAction;
+

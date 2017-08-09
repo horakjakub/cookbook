@@ -34,6 +34,10 @@ import * as fromLayout from './layout';
 import * as fromSearch from './search';
 import * as fromRecipe from './recipe';
 import * as fromRecipesCollection from './recipesCollection';
+import * as fromSignIn from './sign-in'
+import * as fromSignUp from './sign-up'
+import { IInternalError } from '../models/error'
+import * as fromError from './error'
 
 export interface State {
   layout: fromLayout.State;
@@ -41,6 +45,9 @@ export interface State {
   currentRecipes: fromRecipe.State;
   recipesCollection: fromRecipesCollection.State;
   router: fromRouter.RouterState;
+  signedIn: fromSignIn.State;
+  signedUp: fromSignUp.State;
+  errorLog: IInternalError[];
 }
 
 const reducers = {
@@ -49,6 +56,9 @@ const reducers = {
   currentRecipes: fromRecipe.reducer,
   recipesCollection: fromRecipesCollection.reducer,
   router: fromRouter.routerReducer,
+  signedIn: fromSignIn.reducer,
+  signedUp: fromSignUp.reducer,
+  errorLog: fromError.reducer
 };
 
 const developmentReducer: ActionReducer<State> = compose(storeFreeze, combineReducers)(reducers);
@@ -57,15 +67,36 @@ export function reducer(state: any, action: any) {
   return developmentReducer(state, action);
 }
 
+// ----------- // Layout // --------------//
 export const getLayoutState = (state: State) => state.layout;
 export const getShowSidenav = createSelector(getLayoutState, fromLayout.getShowSidenav);
+export const getShowAlert = createSelector(getLayoutState, fromLayout.getShowAlert);
+export const getAlertInfo = createSelector(getLayoutState, fromLayout.getAlertInfo);
 
+
+// ----------- // Search // --------------//
 export const getSearchState = (state: State) => state.search;
 export const getSearchRecipesLabels = createSelector(getSearchState, fromSearch.getLabels);
 export const getSearchQuery = createSelector(getSearchState, fromSearch.getQuery);
 export const getSearchLoading = createSelector(getSearchState, fromSearch.getLoading);
 
-export const getCurrentRecipesState = (state: State) => state.currentRecipes;
-export const getCurrentRecipes = createSelector(getCurrentRecipesState, fromRecipe.getRecipes);
+// ----------- // Searched Recipes // --------------//
+export const getFoundRecipesState = (state: State) => state.currentRecipes;
+export const getFoundRecipes = createSelector(getFoundRecipesState, fromRecipe.getRecipes);
 
-export const getCurrentCollection = (state: State) => state.recipesCollection;
+// ----------- // Recipes Collection // --------------//
+export const getRecipesCollectionState = (state: State) => state.recipesCollection;
+export const getRecipesCollection = createSelector(getRecipesCollectionState, fromRecipesCollection.getRecipesCollection);
+export const getRecipesCollectionSynchronisationState = createSelector(getRecipesCollectionState, fromRecipesCollection.getRecipesCollectionSynchronisationState);
+
+// ----------- // Sign In/Out // --------------//
+export const getSignedInState = (state: State) => state.signedIn;
+export const getSignInStatus = createSelector(getSignedInState, fromSignIn.getSignInStatus);
+export const getSignInMessageStatus = createSelector(getSignedInState, fromSignIn.getSignInErrorMessage);
+
+// ----------- // Sign Up // --------------//
+export const getSignedUpState = (state: State) => state.signedUp;
+export const getSignUpMessageStatus = createSelector(getSignedUpState, fromSignUp.getSignUpErrorMessage);
+
+// ----------- // Errors // --------------//
+export const getErrorLog = (state: State) => state.errorLog;
