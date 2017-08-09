@@ -16,20 +16,23 @@ import * as search from '../actions/search';
 import * as signIn from '../actions/sign-in';
 import * as signUp from '../actions/sign-up';
 import * as errorLog from '../actions/error';
-import * as recipesCollection from '../actions/recipesCollection';
+import * as activationToken from '../actions/activation-token';
+import * as serverConnection from '../actions/server-connection';
+import * as recipesCollection from '../actions/recipes-collection';
 import * as fromRoot from '../reducers';
 
 import { JsonpRequestService } from './jsonp-request.service';
 import { NodeCookbookRequestsFactory } from './node-cookbook-requests.factory';
 import { IRecipe } from './../models/recipe';
 import { IUser } from './../models/user';
-import { IInternalError } from './../models/error';
+
 import {SIGN_IN_SUCCESS} from "../actions/sign-in";
 
 @Injectable()
 
 export class HttpApiEffectsService {
     currentRecipesCollection;
+
     get credentials(): string{
         return sessionStorage.getItem('sessionData');
     }
@@ -65,21 +68,33 @@ export class HttpApiEffectsService {
                 .catch(() => of(new search.SearchCompleteAction([])));
         });
 
-    // serverConnectivityCheckRequest(){
-    //     this.requestService.get('hello', { params: { username: 'kotek' }}).subscribe(
-    //       (success)=>{
-    //           debugger;
-    //       },(error)=>{
-    //           debugger;
-    //     });
-    // }
+    @Effect() checkIsNodeCookbookConnectivity$: Observable<Action> = this.actions$
+        .ofType(serverConnection.SERVER_CONNECTION_CHECK)
+        .map(toPayload)
+        .switchMap(()=>{
+            return this.requestService.get('hello')
+                .map(() => {return new serverConnection.ServerConnectionCheckSuccessAction()})
+                .catch(() => of(new serverConnection.ServerConnectionCheckFailAction()));
+        });
+
+    @Effect() activateToken$: Observable<Action> = this.actions$
+        .ofType(activationToken.ACTIVATE_TOKEN)
+        .map(toPayload)
+        .switchMap(token => {
+            if (token === '') {
+                return empty();
+            }
+
+            return this.requestService.get('activation-token', { params: { token: token }})
+                .map(() => {return new activationToken.ActivateTokensSuccessAction()})
+                .catch((err) => of(new errorLog.AddErrorToLogAction({ type: 'Activatation Token Error', timestamp: Date.now(), errorObject: err})));
+        });
 
     @Effect() signIn$: Observable<Action> = this.actions$
         .ofType(signIn.SIGN_IN)
         .map(toPayload)
         .switchMap((userData: IUser)=> {
             const nextLogin$ = this.actions$.ofType(signIn.SIGN_IN).skip(1);
-            // const that = this;
             let credentials = "Basic " + btoa(userData.email + ":" + userData.password);
 
             return this.requestService.get('login', { headers: { Authorization: credentials }})
@@ -140,16 +155,4 @@ export class HttpApiEffectsService {
                     return of((new errorLog.AddErrorToLogAction({ type: 'Recipes Collection Synchronisation Error', timestamp: Date.now(), errorObject: error})));
                 });
         });
-
-    modifyUserData(){
-
-    }
-
-
-    // hello
-    // create user
-    // login
-    // getRecipesCollection
-    // putRecipesCollection
-
 }

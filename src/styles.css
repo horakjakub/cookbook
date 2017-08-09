@@ -117,3 +117,12 @@ a {
 a:hover {
   color: #00CAF7;
 }
+
+/* ---------------- // grey box // ------------------ */
+
+.grey-box__container {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  font-size: 1.4em;
+}

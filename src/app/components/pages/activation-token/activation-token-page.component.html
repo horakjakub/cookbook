@@ -1,0 +1,12 @@
+<section class="main-view__background">
+  <div class="main-view__container">
+      <div class="grey-box__container activation-token__grey-box__container" *ngIf="serverOnline && tokenActivated">
+        <p class="activation-token__text">
+          User account was successfully activated.
+        </p>
+        <p class="activation-token__text">
+          Now you can <a (click)="goToSignIn()">sign in</a>!
+        </p>
+      </div>
+  </div>
+</section>

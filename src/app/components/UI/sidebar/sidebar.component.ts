@@ -3,7 +3,7 @@ import { Store } from '@ngrx/store';
 import * as fromRoot from '../../../reducers';
 import { Observable } from 'rxjs/Observable';
 import { IRecipe } from '../../../models/recipe';
-import * as recipesCollection from '../../../actions/recipesCollection';
+import * as recipesCollection from '../../../actions/recipes-collection';
 import * as _ from 'lodash';
 import { go } from '@ngrx/router-store';
 import * as layout from '../../../actions/layout';

@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { JsonpModule } from '@angular/http';
 
 // ---------------- ngrx  ------------------- //
-import { StoreModule } from '@ngrx/store';
+import { StoreModule, Store } from '@ngrx/store';
 import { EffectsModule, Actions } from '@ngrx/effects';
 import { routerReducer, RouterStoreModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -28,6 +28,7 @@ import { AlertComponent } from './components/UI/alert/alert.component';
 import { SearchPageComponent } from './components/pages/search/search-page.component';
 import { ContactPageComponent } from './components/pages/contact/contact-page.component';
 import { SignInPageComponent } from './components/pages/sign-in/sign-in.component';
+import { ActivationTokenPageComponent } from './components/pages/activation-token/activation-token-page.component';
 
 // ---------------- directives  ---------------- //
 import { SearchDirective } from './directives/search.directive'
@@ -37,8 +38,17 @@ import { HttpApiEffectsService} from './services/http-api.effects'
 import { JsonpRequestService } from './services/jsonp-request.service';
 import { NodeCookbookRequestsFactory } from './services/node-cookbook-requests.factory';
 
+
+// ------------------ // effects // ------------------------//
+import { UnstoredEffects } from './services/unstored.effects'
+
 // ------------------- // state managing // -------------------- //
-import { reducer } from './reducers';
+import { reducer, State } from './reducers';
+
+// ------------------- // actions // -------------------- //
+
+import { ServerConnectionCheckAction } from './actions/server-connection'
+import { SignInSuccessAction } from './actions/sign-in'
 
 @NgModule({
   imports: [
@@ -50,7 +60,7 @@ import { reducer } from './reducers';
       }
     }),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
-    RouterModule.forRoot(routes, { useHash: true }),
+    RouterModule.forRoot(routes, { useHash: false }),
     RouterStoreModule.connectRouter(),
     JsonpModule,
     HttpClientModule,
@@ -62,6 +72,7 @@ import { reducer } from './reducers';
     AutocompleteComponent,
     SearchPageComponent,
     ContactPageComponent,
+    ActivationTokenPageComponent,
     SearchDirective,
     SidebarComponent,
     LoaderComponent,
@@ -71,11 +82,17 @@ import { reducer } from './reducers';
   providers: [
     JsonpRequestService,
     NodeCookbookRequestsFactory,
-    Actions
+    Actions,
+    HttpApiEffectsService,
+    UnstoredEffects
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(){
+  constructor(
+      private store: Store<State>,
+      private httpApiEffectsService: HttpApiEffectsService
+  ){
+    this.store.dispatch(new ServerConnectionCheckAction());
   }
 }

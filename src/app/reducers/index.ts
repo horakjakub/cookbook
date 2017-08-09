@@ -33,11 +33,12 @@ import { combineReducers } from '@ngrx/store';
 import * as fromLayout from './layout';
 import * as fromSearch from './search';
 import * as fromRecipe from './recipe';
-import * as fromRecipesCollection from './recipesCollection';
-import * as fromSignIn from './sign-in'
-import * as fromSignUp from './sign-up'
-import { IInternalError } from '../models/error'
+import * as fromRecipesCollection from './recipes-collection';
+import * as fromSignIn from './sign-in';
+import * as fromSignUp from './sign-up';
+import { IInternalError } from '../models/error';
 import * as fromError from './error'
+import * as fromServerConnection from './sever-connection'
 
 export interface State {
   layout: fromLayout.State;
@@ -48,6 +49,7 @@ export interface State {
   signedIn: fromSignIn.State;
   signedUp: fromSignUp.State;
   errorLog: IInternalError[];
+  serverOnline: boolean;
 }
 
 const reducers = {
@@ -58,7 +60,8 @@ const reducers = {
   router: fromRouter.routerReducer,
   signedIn: fromSignIn.reducer,
   signedUp: fromSignUp.reducer,
-  errorLog: fromError.reducer
+  errorLog: fromError.reducer,
+  serverOnline: fromServerConnection.reducer
 };
 
 const developmentReducer: ActionReducer<State> = compose(storeFreeze, combineReducers)(reducers);
@@ -100,3 +103,6 @@ export const getSignUpMessageStatus = createSelector(getSignedUpState, fromSignU
 
 // ----------- // Errors // --------------//
 export const getErrorLog = (state: State) => state.errorLog;
+
+// ----------- // Server Online // --------------//
+export const getServerOnlineState = (state: State) => state.serverOnline;

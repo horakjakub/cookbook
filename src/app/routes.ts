@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SearchPageComponent } from './components/pages/search/search-page.component';
 import { ContactPageComponent } from './components/pages/contact/contact-page.component';
 import { SignInPageComponent } from './components/pages/sign-in/sign-in.component';
+import { ActivationTokenPageComponent } from './components/pages/activation-token/activation-token-page.component';
+
 
 export const routes: Routes = [
   { path: '', redirectTo: '/search', pathMatch: 'full' },
@@ -17,5 +19,9 @@ export const routes: Routes = [
   {
     path: 'sign-in',
     component: SignInPageComponent
+  },
+  {
+    path: 'activation-token',
+    component: ActivationTokenPageComponent
   }
 ];

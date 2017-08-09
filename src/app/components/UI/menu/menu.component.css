@@ -30,6 +30,7 @@
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
   outline: 0;
+  display: none;
 }
 
 .menu__item:hover:not(.menu__item--selected) {
@@ -38,6 +39,9 @@
 
 .menu__item--selected {
   color: #00B298;
+}
+.menu__item--visible {
+  display: inline-block;
 }
 
 .menu__list__icon__wrapper {

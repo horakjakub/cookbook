@@ -1,4 +1,4 @@
-import * as recipesCollection from '../actions/recipesCollection';
+import * as recipesCollection from '../actions/recipes-collection';
 import { IRecipe } from '../models/recipe';
 import * as _ from 'lodash';
 

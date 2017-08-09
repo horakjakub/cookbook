@@ -9,8 +9,6 @@ import { ShowAlertAction } from './../../../actions/layout';
 import * as fromRoot from '../../../reducers';
 import { Observable } from 'rxjs/Observable';
 
-
-
 @Component({
   templateUrl: './sign-in.component.html',
   styleUrls: ['./sign-in.component.css']
