@@ -36,9 +36,6 @@
                         <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                         <ul class="links">
                                 <li class="link">
-                                    <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                </li>
-                                <li class="link">
                                     <a 
                                         
                                          href="./overview.html" 
@@ -47,19 +44,24 @@
                                         <span class="fa fa-th"></span>Overview
                                     </a>
                                 </li>
+                                <li class="link">
+                                  <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
                         </ul>
                     </li>
             
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./modules.html"  class="active" >
-                            <span class="fa fa-archive"></span>
-                            <span>Modules</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                            <div class="menu-toggler linked" data-toggle="collapse"
                                     data-target="#xs-modules-links"
-                            ></span>
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
                         </a>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-modules-links"
                             >
                                 <li class="link">
@@ -69,16 +71,22 @@
                     </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
                             <span class="fa fa-cogs"></span>
                             <span>Components</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-components-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-components-links"
                             >
+                                <li class="link">
+                                    <a href="./components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/AlertComponent.html" >AlertComponent</a>
+                                </li>
                                 <li class="link">
                                     <a href="./components/AppComponent.html" >AppComponent</a>
                                 </li>
@@ -86,7 +94,13 @@
                                     <a href="./components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="./components/ConfirmComponent.html" >ConfirmComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="./components/ContactPageComponent.html" >ContactPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/LoaderComponent.html" >LoaderComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="./components/MenuComponent.html" >MenuComponent</a>
@@ -94,33 +108,225 @@
                                 <li class="link">
                                     <a href="./components/SearchPageComponent.html" >SearchPageComponent</a>
                                 </li>
+                                <li class="link">
+                                    <a href="./components/SidebarComponent.html" >SidebarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/SignInPageComponent.html" >SignInPageComponent</a>
+                                </li>
                         </ul>
                     </li>
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="./directives/SearchDirective.html" >SearchDirective</a>
+                                </li>
+                        </ul>
+                    </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
                             <span class="fa fa-file-code-o"></span>
                             <span>Classes</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-classes-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-classes-links"
                             >
                                 <li class="link">
+                                    <a href="./classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                </li>
+                                <li class="link">
                                     <a href="./classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/HideAlertAction.html" >HideAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SearchAction.html" >SearchAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInAction.html" >SignInAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInFailAction.html" >SignInFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutAction.html" >SignOutAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpAction.html" >SignUpAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="./injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="./interfaces/IAlert.html" >IAlert</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IConfirm.html" >IConfirm</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IInternalError.html" >IInternalError</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IRecipe.html" >IRecipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IUser.html" >IUser</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/param.html" >param</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/requestOptions.html" >requestOptions</a>
                                 </li>
                         </ul>
                     </li>
             
             
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="./routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                    </li>
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -163,9 +369,6 @@
                                <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                                <ul class="links">
                                        <li class="link">
-                                           <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                       </li>
-                                       <li class="link">
                                            <a 
                                                
                                                 href="./overview.html" 
@@ -174,19 +377,24 @@
                                                <span class="fa fa-th"></span>Overview
                                            </a>
                                        </li>
+                                       <li class="link">
+                                         <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
                                </ul>
                            </li>
                    
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./modules.html"  class="active" >
-                                   <span class="fa fa-archive"></span>
-                                   <span>Modules</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                   <div class="menu-toggler linked" data-toggle="collapse"
                                            data-target="#modules-links"
-                                   ></span>
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
                                </a>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="modules-links"
                    >
                                        <li class="link">
@@ -196,16 +404,22 @@
                            </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
                                    <span class="fa fa-cogs"></span>
                                    <span>Components</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#components-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="components-links"
                    >
+                                       <li class="link">
+                                           <a href="./components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/AlertComponent.html" >AlertComponent</a>
+                                       </li>
                                        <li class="link">
                                            <a href="./components/AppComponent.html" >AppComponent</a>
                                        </li>
@@ -213,7 +427,13 @@
                                            <a href="./components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="./components/ConfirmComponent.html" >ConfirmComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./components/ContactPageComponent.html" >ContactPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/LoaderComponent.html" >LoaderComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="./components/MenuComponent.html" >MenuComponent</a>
@@ -221,33 +441,225 @@
                                        <li class="link">
                                            <a href="./components/SearchPageComponent.html" >SearchPageComponent</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="./components/SidebarComponent.html" >SidebarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/SignInPageComponent.html" >SignInPageComponent</a>
+                                       </li>
                                </ul>
                            </li>
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="./directives/SearchDirective.html" >SearchDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
                                    <span class="fa fa-file-code-o"></span>
                                    <span>Classes</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#classes-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="classes-links"
                    >
                                        <li class="link">
+                                           <a href="./classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/HideAlertAction.html" >HideAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SearchAction.html" >SearchAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInAction.html" >SignInAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInFailAction.html" >SignInFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutAction.html" >SignOutAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpAction.html" >SignUpAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="./injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="./interfaces/IAlert.html" >IAlert</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IConfirm.html" >IConfirm</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IInternalError.html" >IInternalError</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IRecipe.html" >IRecipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IUser.html" >IUser</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/param.html" >param</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/requestOptions.html" >requestOptions</a>
                                        </li>
                                </ul>
                            </li>
                    
                    
-                   
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="./routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                           </li>
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -270,6 +682,8 @@
                </div>
                <div class="content modules">
                    <div class="content-data">
+
+
 
 <h3>Modules</h3>
 <div class="container-fluid modules">

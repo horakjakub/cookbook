@@ -36,9 +36,6 @@
                         <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                         <ul class="links">
                                 <li class="link">
-                                    <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                </li>
-                                <li class="link">
                                     <a 
                                         
                                          href="./overview.html" 
@@ -47,19 +44,24 @@
                                         <span class="fa fa-th"></span>Overview
                                     </a>
                                 </li>
+                                <li class="link">
+                                  <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
                         </ul>
                     </li>
             
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./modules.html" >
-                            <span class="fa fa-archive"></span>
-                            <span>Modules</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                            <div class="menu-toggler linked" data-toggle="collapse"
                                     data-target="#xs-modules-links"
-                            ></span>
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
                         </a>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-modules-links"
                             >
                                 <li class="link">
@@ -69,16 +71,22 @@
                     </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
                             <span class="fa fa-cogs"></span>
                             <span>Components</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-components-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-components-links"
                             >
+                                <li class="link">
+                                    <a href="./components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/AlertComponent.html" >AlertComponent</a>
+                                </li>
                                 <li class="link">
                                     <a href="./components/AppComponent.html" >AppComponent</a>
                                 </li>
@@ -86,7 +94,13 @@
                                     <a href="./components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="./components/ConfirmComponent.html" >ConfirmComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="./components/ContactPageComponent.html" >ContactPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/LoaderComponent.html" >LoaderComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="./components/MenuComponent.html" >MenuComponent</a>
@@ -94,33 +108,225 @@
                                 <li class="link">
                                     <a href="./components/SearchPageComponent.html" >SearchPageComponent</a>
                                 </li>
+                                <li class="link">
+                                    <a href="./components/SidebarComponent.html" >SidebarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/SignInPageComponent.html" >SignInPageComponent</a>
+                                </li>
                         </ul>
                     </li>
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="./directives/SearchDirective.html" >SearchDirective</a>
+                                </li>
+                        </ul>
+                    </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
                             <span class="fa fa-file-code-o"></span>
                             <span>Classes</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-classes-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-classes-links"
                             >
                                 <li class="link">
+                                    <a href="./classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                </li>
+                                <li class="link">
                                     <a href="./classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/HideAlertAction.html" >HideAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SearchAction.html" >SearchAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInAction.html" >SignInAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInFailAction.html" >SignInFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutAction.html" >SignOutAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpAction.html" >SignUpAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="./injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="./interfaces/IAlert.html" >IAlert</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IConfirm.html" >IConfirm</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IInternalError.html" >IInternalError</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IRecipe.html" >IRecipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IUser.html" >IUser</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/param.html" >param</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/requestOptions.html" >requestOptions</a>
                                 </li>
                         </ul>
                     </li>
             
             
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="./routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                    </li>
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -163,9 +369,6 @@
                                <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                                <ul class="links">
                                        <li class="link">
-                                           <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                       </li>
-                                       <li class="link">
                                            <a 
                                                
                                                 href="./overview.html" 
@@ -174,19 +377,24 @@
                                                <span class="fa fa-th"></span>Overview
                                            </a>
                                        </li>
+                                       <li class="link">
+                                         <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
                                </ul>
                            </li>
                    
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./modules.html" >
-                                   <span class="fa fa-archive"></span>
-                                   <span>Modules</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                   <div class="menu-toggler linked" data-toggle="collapse"
                                            data-target="#modules-links"
-                                   ></span>
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
                                </a>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="modules-links"
                    >
                                        <li class="link">
@@ -196,16 +404,22 @@
                            </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
                                    <span class="fa fa-cogs"></span>
                                    <span>Components</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#components-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="components-links"
                    >
+                                       <li class="link">
+                                           <a href="./components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/AlertComponent.html" >AlertComponent</a>
+                                       </li>
                                        <li class="link">
                                            <a href="./components/AppComponent.html" >AppComponent</a>
                                        </li>
@@ -213,7 +427,13 @@
                                            <a href="./components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="./components/ConfirmComponent.html" >ConfirmComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./components/ContactPageComponent.html" >ContactPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/LoaderComponent.html" >LoaderComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="./components/MenuComponent.html" >MenuComponent</a>
@@ -221,33 +441,225 @@
                                        <li class="link">
                                            <a href="./components/SearchPageComponent.html" >SearchPageComponent</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="./components/SidebarComponent.html" >SidebarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/SignInPageComponent.html" >SignInPageComponent</a>
+                                       </li>
                                </ul>
                            </li>
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="./directives/SearchDirective.html" >SearchDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
                                    <span class="fa fa-file-code-o"></span>
                                    <span>Classes</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#classes-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="classes-links"
                    >
                                        <li class="link">
+                                           <a href="./classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/HideAlertAction.html" >HideAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SearchAction.html" >SearchAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInAction.html" >SignInAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInFailAction.html" >SignInFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutAction.html" >SignOutAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpAction.html" >SignUpAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="./injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="./interfaces/IAlert.html" >IAlert</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IConfirm.html" >IConfirm</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IInternalError.html" >IInternalError</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IRecipe.html" >IRecipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IUser.html" >IUser</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/param.html" >param</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/requestOptions.html" >requestOptions</a>
                                        </li>
                                </ul>
                            </li>
                    
                    
-                   
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="./routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                           </li>
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -280,6 +692,8 @@
 
 
 
+
+
 <ol class="breadcrumb">
   <li>Documentation coverage</li>
 </ol>
@@ -296,7 +710,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr class="medium">
+        <tr class="low">
             <td>
                 <a href="./classes/AngularCookbookPage.html">e2e/app.po.ts</a>
             </td>
@@ -307,28 +721,478 @@
                 AngularCookbookPage
             </td>
             <td align="right">
-                <span class="coverage-percent">33 %</span>
-                <span class="coverage-count">(1/3)</span>
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
             </td>
         </tr>
         <tr class="low">
             <td>
-                <a href="./components/AppComponent.html">src/app/components/app.component.ts</a>
+                <a href="./classes/ActivateTokenAction.html">src/app/actions/activation-token.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                ActivateTokenAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/ActivateTokensSuccessAction.html">src/app/actions/activation-token.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                ActivateTokensSuccessAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/AddErrorToLogAction.html">src/app/actions/error.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                AddErrorToLogAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/CloseSidenavAction.html">src/app/actions/layout.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                CloseSidenavAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/HideAlertAction.html">src/app/actions/layout.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                HideAlertAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/HideConfirmAction.html">src/app/actions/layout.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                HideConfirmAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/OpenSidenavAction.html">src/app/actions/layout.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                OpenSidenavAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/ShowAlertAction.html">src/app/actions/layout.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                ShowAlertAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/ShowConfirmAction.html">src/app/actions/layout.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                ShowConfirmAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SizeChangeAction.html">src/app/actions/layout.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SizeChangeAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/AddRecipeAction.html">src/app/actions/recipes-collection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                AddRecipeAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/MergeCollectionsAction.html">src/app/actions/recipes-collection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                MergeCollectionsAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/RemoveRecipeAction.html">src/app/actions/recipes-collection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                RemoveRecipeAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SynchroniseRecipesCollectionAction.html">src/app/actions/recipes-collection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SynchroniseRecipesCollectionAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SynchroniseRecipesCollectionFailAction.html">src/app/actions/recipes-collection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SynchroniseRecipesCollectionFailAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SynchroniseRecipesCollectionSuccessAction.html">src/app/actions/recipes-collection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SynchroniseRecipesCollectionSuccessAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SearchAction.html">src/app/actions/search.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SearchAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SearchCompleteAction.html">src/app/actions/search.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SearchCompleteAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/ServerConnectionCheckAction.html">src/app/actions/server-connection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                ServerConnectionCheckAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/ServerConnectionCheckFailAction.html">src/app/actions/server-connection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                ServerConnectionCheckFailAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/ServerConnectionCheckSuccessAction.html">src/app/actions/server-connection.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                ServerConnectionCheckSuccessAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignInAction.html">src/app/actions/sign-in.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignInAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignInFailAction.html">src/app/actions/sign-in.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignInFailAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignInSuccessAction.html">src/app/actions/sign-in.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignInSuccessAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignOutAction.html">src/app/actions/sign-in.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignOutAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignOutFailAction.html">src/app/actions/sign-in.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignOutFailAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignOutSuccessAction.html">src/app/actions/sign-in.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignOutSuccessAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignUpAction.html">src/app/actions/sign-up.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignUpAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignUpFailAction.html">src/app/actions/sign-up.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignUpFailAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./classes/SignUpSuccessAction.html">src/app/actions/sign-up.ts</a>
+            </td>
+            <td>
+                class
+            </td>
+            <td>
+                SignUpSuccessAction
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/AlertComponent.html">src/app/components/UI/alert/alert.component.ts</a>
             </td>
             <td>
                 component
             </td>
             <td>
-                AppComponent
+                AlertComponent
             </td>
             <td align="right">
                 <span class="coverage-percent">0 %</span>
-                <span class="coverage-count">(0/1)</span>
+                <span class="coverage-count">(0/7)</span>
             </td>
         </tr>
         <tr class="low">
             <td>
-                <a href="./components/AutocompleteComponent.html">src/app/components/autocomplete.component.ts</a>
+                <a href="./components/AutocompleteComponent.html">src/app/components/UI/autocomplete/autocomplete.component.ts</a>
             </td>
             <td>
                 component
@@ -343,13 +1207,103 @@
         </tr>
         <tr class="low">
             <td>
-                <a href="./components/MenuComponent.html">src/app/components/menu.component.ts</a>
+                <a href="./components/ConfirmComponent.html">src/app/components/UI/confirm/confirm.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                ConfirmComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/9)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/LoaderComponent.html">src/app/components/UI/loader/loader.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                LoaderComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/MenuComponent.html">src/app/components/UI/menu/menu.component.ts</a>
             </td>
             <td>
                 component
             </td>
             <td>
                 MenuComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/16)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/menuPageAdress.html">src/app/components/UI/menu/menu.component.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                menuPageAdress
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/SidebarComponent.html">src/app/components/UI/sidebar/sidebar.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                SidebarComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/13)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/AppComponent.html">src/app/components/app.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                AppComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/5)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/ActivationTokenPageComponent.html">src/app/components/pages/activation-token/activation-token-page.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                ActivationTokenPageComponent
             </td>
             <td align="right">
                 <span class="coverage-percent">0 %</span>
@@ -383,7 +1337,292 @@
             </td>
             <td align="right">
                 <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/12)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./components/SignInPageComponent.html">src/app/components/pages/sign-in/sign-in.component.ts</a>
+            </td>
+            <td>
+                component
+            </td>
+            <td>
+                SignInPageComponent
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/19)</span>
+            </td>
+        </tr>
+        <tr class="medium">
+            <td>
+                <a href="./interfaces/IAlert.html">src/app/models/alert.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                IAlert
+            </td>
+            <td align="right">
+                <span class="coverage-percent">33 %</span>
+                <span class="coverage-count">(1/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/IConfirm.html">src/app/models/confirm.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                IConfirm
+            </td>
+            <td align="right">
+                <span class="coverage-percent">25 %</span>
+                <span class="coverage-count">(1/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/IInternalError.html">src/app/models/error.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                IInternalError
+            </td>
+            <td align="right">
+                <span class="coverage-percent">25 %</span>
+                <span class="coverage-count">(1/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/IRecipe.html">src/app/models/recipe.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                IRecipe
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/6)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/IUser.html">src/app/models/user.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                IUser
+            </td>
+            <td align="right">
+                <span class="coverage-percent">25 %</span>
+                <span class="coverage-count">(1/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/State.html">src/app/reducers/index.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                State
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/10)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/State.html">src/app/reducers/layout.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                State
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/7)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/State.html">src/app/reducers/recipe.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                State
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
                 <span class="coverage-count">(0/2)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/State.html">src/app/reducers/recipes-collection.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                State
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/State.html">src/app/reducers/search.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                State
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/State.html">src/app/reducers/sign-in.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                State
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/4)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/State.html">src/app/reducers/sign-up.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                State
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/HttpApiEffectsService.html">src/app/services/http-api.effects.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                HttpApiEffectsService
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/11)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/JsonpRequestService.html">src/app/services/jsonp-request.service.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                JsonpRequestService
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/7)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/NodeCookbookRequestsFactory.html">src/app/services/node-cookbook-requests.factory.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                NodeCookbookRequestsFactory
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/10)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/param.html">src/app/services/node-cookbook-requests.factory.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                param
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/1)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./interfaces/requestOptions.html">src/app/services/node-cookbook-requests.factory.ts</a>
+            </td>
+            <td>
+                interface
+            </td>
+            <td>
+                requestOptions
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
+            </td>
+        </tr>
+        <tr class="low">
+            <td>
+                <a href="./injectables/UnstoredEffects.html">src/app/services/unstored.effects.ts</a>
+            </td>
+            <td>
+                injectable
+            </td>
+            <td>
+                UnstoredEffects
+            </td>
+            <td align="right">
+                <span class="coverage-percent">0 %</span>
+                <span class="coverage-count">(0/3)</span>
             </td>
         </tr>
     </tbody>

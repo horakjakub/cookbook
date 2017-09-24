@@ -36,9 +36,6 @@
                         <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                         <ul class="links">
                                 <li class="link">
-                                    <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                </li>
-                                <li class="link">
                                     <a 
                                         
                                          href="./overview.html" 
@@ -47,19 +44,24 @@
                                         <span class="fa fa-th"></span>Overview
                                     </a>
                                 </li>
+                                <li class="link">
+                                  <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
                         </ul>
                     </li>
             
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./modules.html" >
-                            <span class="fa fa-archive"></span>
-                            <span>Modules</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                            <div class="menu-toggler linked" data-toggle="collapse"
                                     data-target="#xs-modules-links"
-                            ></span>
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
                         </a>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-modules-links"
                             >
                                 <li class="link">
@@ -69,16 +71,22 @@
                     </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
                             <span class="fa fa-cogs"></span>
                             <span>Components</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-components-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-components-links"
                             >
+                                <li class="link">
+                                    <a href="./components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/AlertComponent.html" >AlertComponent</a>
+                                </li>
                                 <li class="link">
                                     <a href="./components/AppComponent.html" >AppComponent</a>
                                 </li>
@@ -86,7 +94,13 @@
                                     <a href="./components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="./components/ConfirmComponent.html" >ConfirmComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="./components/ContactPageComponent.html" >ContactPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/LoaderComponent.html" >LoaderComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="./components/MenuComponent.html" >MenuComponent</a>
@@ -94,33 +108,225 @@
                                 <li class="link">
                                     <a href="./components/SearchPageComponent.html" >SearchPageComponent</a>
                                 </li>
+                                <li class="link">
+                                    <a href="./components/SidebarComponent.html" >SidebarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/SignInPageComponent.html" >SignInPageComponent</a>
+                                </li>
                         </ul>
                     </li>
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="./directives/SearchDirective.html" >SearchDirective</a>
+                                </li>
+                        </ul>
+                    </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
                             <span class="fa fa-file-code-o"></span>
                             <span>Classes</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-classes-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-classes-links"
                             >
                                 <li class="link">
+                                    <a href="./classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                </li>
+                                <li class="link">
                                     <a href="./classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/HideAlertAction.html" >HideAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SearchAction.html" >SearchAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInAction.html" >SignInAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInFailAction.html" >SignInFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutAction.html" >SignOutAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpAction.html" >SignUpAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="./injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="./interfaces/IAlert.html" >IAlert</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IConfirm.html" >IConfirm</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IInternalError.html" >IInternalError</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IRecipe.html" >IRecipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/IUser.html" >IUser</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/param.html" >param</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./interfaces/requestOptions.html" >requestOptions</a>
                                 </li>
                         </ul>
                     </li>
             
             
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="./routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                    </li>
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="./miscellaneous.html"  class="active" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -163,9 +369,6 @@
                                <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
                                <ul class="links">
                                        <li class="link">
-                                           <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                       </li>
-                                       <li class="link">
                                            <a 
                                                
                                                 href="./overview.html" 
@@ -174,19 +377,24 @@
                                                <span class="fa fa-th"></span>Overview
                                            </a>
                                        </li>
+                                       <li class="link">
+                                         <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
                                </ul>
                            </li>
                    
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./modules.html" >
-                                   <span class="fa fa-archive"></span>
-                                   <span>Modules</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                   <div class="menu-toggler linked" data-toggle="collapse"
                                            data-target="#modules-links"
-                                   ></span>
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
                                </a>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="modules-links"
                    >
                                        <li class="link">
@@ -196,16 +404,22 @@
                            </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
                                    <span class="fa fa-cogs"></span>
                                    <span>Components</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#components-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="components-links"
                    >
+                                       <li class="link">
+                                           <a href="./components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/AlertComponent.html" >AlertComponent</a>
+                                       </li>
                                        <li class="link">
                                            <a href="./components/AppComponent.html" >AppComponent</a>
                                        </li>
@@ -213,7 +427,13 @@
                                            <a href="./components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="./components/ConfirmComponent.html" >ConfirmComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./components/ContactPageComponent.html" >ContactPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/LoaderComponent.html" >LoaderComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="./components/MenuComponent.html" >MenuComponent</a>
@@ -221,33 +441,225 @@
                                        <li class="link">
                                            <a href="./components/SearchPageComponent.html" >SearchPageComponent</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="./components/SidebarComponent.html" >SidebarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/SignInPageComponent.html" >SignInPageComponent</a>
+                                       </li>
                                </ul>
                            </li>
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="./directives/SearchDirective.html" >SearchDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
                                    <span class="fa fa-file-code-o"></span>
                                    <span>Classes</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#classes-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="classes-links"
                    >
                                        <li class="link">
+                                           <a href="./classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/HideAlertAction.html" >HideAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SearchAction.html" >SearchAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInAction.html" >SignInAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInFailAction.html" >SignInFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutAction.html" >SignOutAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpAction.html" >SignUpAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="./injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="./interfaces/IAlert.html" >IAlert</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IConfirm.html" >IConfirm</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IInternalError.html" >IInternalError</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IRecipe.html" >IRecipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/IUser.html" >IUser</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/param.html" >param</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./interfaces/requestOptions.html" >requestOptions</a>
                                        </li>
                                </ul>
                            </li>
                    
                    
-                   
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="./routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                           </li>
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="./miscellaneous.html"  class="active" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -279,26 +691,1479 @@
 
 
 
+
+
 <ol class="breadcrumb">
   <li>Miscellaneous</li>
 </ol>
 
     <h2 id="inputs"><b>Variables</b></h2>
-        <h4><code>src/app/reducers/meals.ts</code></h4>
+        <h4><code>src/app/actions/activation-token.ts</code></h4>
         <section>
                     <table class="table table-sm table-bordered">
                     <tbody>
                         <tr>
                             <td class="col-md-4">
-                                <b> mealsReducer</b>
+                                <b> ACTIVATE_TOKEN</b>
                             </td>
                         </tr>
                         <tr>
                             <td class="col-md-4">
-                                <code>mealsReducer:     <code></code>
+                                <code>ACTIVATE_TOKEN:     <code></code>
         </bcode>
                             </td>
                         </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Activate Token] Activation started</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> ACTIVATE_TOKEN_SUCCESS</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>ACTIVATE_TOKEN_SUCCESS:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Activate Token] Activation succeeded</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/actions/error.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> ERROR_OCCURRED</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>ERROR_OCCURRED:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Error] Error occurred</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/actions/layout.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> OPEN_SIDENAV</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>OPEN_SIDENAV:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Layout] Open Sidenav</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> CLOSE_SIDENAV</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>CLOSE_SIDENAV:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Layout] Close Sidenav</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SHOW_ALERT</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SHOW_ALERT:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Layout] Show Alert</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> HIDE_ALERT</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>HIDE_ALERT:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Layout] Hide Alert</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SHOW_CONFIRM</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SHOW_CONFIRM:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Layout] Show Confirm</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> HIDE_CONFIRM</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>HIDE_CONFIRM:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Layout] Hide Confirm</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIZE_CHANGE</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIZE_CHANGE:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Layout] Size Change</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/actions/recipes-collection.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> ADD_RECIPE</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>ADD_RECIPE:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipes Collection] Add Recipe</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> REMOVE_RECIPE</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>REMOVE_RECIPE:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipes Collection] Remove Recipe</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> MERGE_COLLECTIONS</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>MERGE_COLLECTIONS:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipes Collection] Merge Recipes Collections</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SYNCHRONISE_RECIPES_COLLECTION</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SYNCHRONISE_RECIPES_COLLECTION:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipes Collection] Recipe Collection Synchronising Started</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SYNCHRONISE_RECIPES_COLLECTION_SUCCESS</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SYNCHRONISE_RECIPES_COLLECTION_SUCCESS:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipes Collection] Recipe Collection Synchronising Succeed</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SYNCHRONISE_RECIPES_COLLECTION_FAIL</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SYNCHRONISE_RECIPES_COLLECTION_FAIL:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipes Collection] Recipe Collection Synchronising Failed</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/actions/search.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SEARCH</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SEARCH:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipe] Search</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SEARCH_COMPLETE</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SEARCH_COMPLETE:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Recipe] Search Complete</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/actions/server-connection.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SERVER_CONNECTION_CHECK</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SERVER_CONNECTION_CHECK:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Server Connection] Server Connection check started</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SERVER_CONNECTION_CHECK_SUCCESS</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SERVER_CONNECTION_CHECK_SUCCESS:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Server Connection] Server Connection established</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SERVER_CONNECTION_CHECK_FAIL</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SERVER_CONNECTION_CHECK_FAIL:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[Server Connection] Server Connection unavailable</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/actions/sign-in.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_IN</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_IN:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignedIn] User Sign In</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_IN_SUCCESS</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_IN_SUCCESS:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignedIn] User Sign In Success</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_IN_FAIL</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_IN_FAIL:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignedIn] User Sign In Fail</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_OUT</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_OUT:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignedIn] User Sign Out</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_OUT_SUCCESS</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_OUT_SUCCESS:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignedIn] User Sign Out Success</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_OUT_FAIL</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_OUT_FAIL:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignedIn] User Sign Out Fail</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/actions/sign-up.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_UP</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_UP:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignUp] User Sign Up</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_UP_SUCCESS</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_UP_SUCCESS:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignUp] User Sign Up Success</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> SIGN_UP_FAIL</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>SIGN_UP_FAIL:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>[SignUp] User Sign Up Fail</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/error.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code>[]</code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code>[]</code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/index.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducers</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>reducers:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> developmentReducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>developmentReducer:     <code>ActionReducer&lt;&gt;</code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code>ActionReducer&lt;&gt;</code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getLayoutState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getLayoutState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getShowSidenav</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getShowSidenav:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getShowAlert</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getShowAlert:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getAlertInfo</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getAlertInfo:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getShowConfirm</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getShowConfirm:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getConfirmInfo</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getConfirmInfo:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSize</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSize:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSearchState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSearchState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSearchRecipesLabels</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSearchRecipesLabels:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSearchQuery</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSearchQuery:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSearchLoading</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSearchLoading:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getFoundRecipesState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getFoundRecipesState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getFoundRecipes</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getFoundRecipes:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getRecipesCollectionState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getRecipesCollectionState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getRecipesCollection</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getRecipesCollection:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getRecipesCollectionSynchronisationState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getRecipesCollectionSynchronisationState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignedInState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignedInState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignInStatus</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignInStatus:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignInMessageStatus</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignInMessageStatus:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignedUpState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignedUpState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignUpMessageStatus</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignUpMessageStatus:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getErrorLog</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getErrorLog:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getServerOnlineState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getServerOnlineState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/layout.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getShowSidenav</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getShowSidenav:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getShowAlert</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getShowAlert:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getAlertInfo</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getAlertInfo:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getShowConfirm</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getShowConfirm:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getConfirmInfo</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getConfirmInfo:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSize</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSize:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/recipe.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getRecipes</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getRecipes:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/recipes-collection.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getRecipesCollectionState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getRecipesCollectionState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getRecipesCollection</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getRecipesCollection:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getRecipesCollectionSynchronisationState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getRecipesCollectionSynchronisationState:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/search.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getLabels</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getLabels:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getQuery</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getQuery:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getLoading</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getLoading:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/sever-connection.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code>boolean</code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code>boolean</code>
+        
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Default value : </i><code>true</code>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/sign-in.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignInStatus</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignInStatus:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignInErrorMessage</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignInErrorMessage:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/sign-up.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> initialState</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>initialState:     <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code><a href="../interfaces/State.html" target="_self" >State</a></code>
+        
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> getSignUpErrorMessage</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>getSignUpErrorMessage:     <code></code>
+        </bcode>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/services/recipes-mock.service.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> RECIPES</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <code>RECIPES:     <code>Array&lt;&gt;</code>
+        </bcode>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code>Array&lt;&gt;</code>
+        
+                                </td>
+                            </tr>
                     </tbody>
                 </table>
         </section>
@@ -353,6 +2218,12 @@
         </bcode>
                             </td>
                         </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code>any</code>
+        
+                                </td>
+                            </tr>
                     </tbody>
                 </table>
                 <table class="table table-sm table-bordered">
@@ -368,6 +2239,12 @@
         </bcode>
                             </td>
                         </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Type : </i>    <code>any</code>
+        
+                                </td>
+                            </tr>
                     </tbody>
                 </table>
                 <table class="table table-sm table-bordered">
@@ -387,6 +2264,187 @@
                 </table>
         </section>
 
+    <h2 id="inputs"><b>Functions</b></h2>
+        <h4><code>src/app/reducers/error.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/index.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/layout.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/recipe.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/recipes-collection.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/search.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/sever-connection.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/sign-in.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
+        <h4><code>src/app/reducers/sign-up.ts</code></h4>
+        <section>
+                    <table class="table table-sm table-bordered">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <b> reducer</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+        <code>reducer(state: undefined, action: undefined)</code>
+                            </td>
+                        </tr>
+        
+        
+        
+                    </tbody>
+                </table>
+        </section>
 
 
 

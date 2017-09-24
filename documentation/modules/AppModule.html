@@ -36,9 +36,6 @@
                         <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
                         <ul class="links">
                                 <li class="link">
-                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                </li>
-                                <li class="link">
                                     <a 
                                         
                                          href="../overview.html" 
@@ -47,19 +44,24 @@
                                         <span class="fa fa-th"></span>Overview
                                     </a>
                                 </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
                         </ul>
                     </li>
             
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../modules.html" >
-                            <span class="fa fa-archive"></span>
-                            <span>Modules</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                            <div class="menu-toggler linked" data-toggle="collapse"
                                     data-target="#xs-modules-links"
-                            ></span>
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
                         </a>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-modules-links"
                             >
                                 <li class="link">
@@ -69,16 +71,22 @@
                     </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
                             <span class="fa fa-cogs"></span>
                             <span>Components</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-components-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-components-links"
                             >
+                                <li class="link">
+                                    <a href="../components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/AlertComponent.html" >AlertComponent</a>
+                                </li>
                                 <li class="link">
                                     <a href="../components/AppComponent.html" >AppComponent</a>
                                 </li>
@@ -86,7 +94,13 @@
                                     <a href="../components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/ConfirmComponent.html" >ConfirmComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/ContactPageComponent.html" >ContactPageComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/LoaderComponent.html" >LoaderComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/MenuComponent.html" >MenuComponent</a>
@@ -94,33 +108,225 @@
                                 <li class="link">
                                     <a href="../components/SearchPageComponent.html" >SearchPageComponent</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../components/SidebarComponent.html" >SidebarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SignInPageComponent.html" >SignInPageComponent</a>
+                                </li>
                         </ul>
                     </li>
             
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/SearchDirective.html" >SearchDirective</a>
+                                </li>
+                        </ul>
+                    </li>
             
                     <li class="chapter">
-                        <div class="simple">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
                             <span class="fa fa-file-code-o"></span>
                             <span>Classes</span>
-                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                    data-target="#xs-classes-links"
-                                ></span>
+                            <span class="fa fa-angle-down"></span>
                         </div>
-                        <ul class="links collapse in"
+                        <ul class="links collapse "
                                 id="xs-classes-links"
                             >
                                 <li class="link">
+                                    <a href="../classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HideAlertAction.html" >HideAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SearchAction.html" >SearchAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignInAction.html" >SignInAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignInFailAction.html" >SignInFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignOutAction.html" >SignOutAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignUpAction.html" >SignUpAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/IAlert.html" >IAlert</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IConfirm.html" >IConfirm</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IInternalError.html" >IInternalError</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IRecipe.html" >IRecipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IUser.html" >IUser</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/State.html" >State</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/param.html" >param</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/requestOptions.html" >requestOptions</a>
                                 </li>
                         </ul>
                     </li>
             
             
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                    </li>
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -163,9 +369,6 @@
                                <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
                                <ul class="links">
                                        <li class="link">
-                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                       </li>
-                                       <li class="link">
                                            <a 
                                                
                                                 href="../overview.html" 
@@ -174,19 +377,24 @@
                                                <span class="fa fa-th"></span>Overview
                                            </a>
                                        </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
                                </ul>
                            </li>
                    
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../modules.html" >
-                                   <span class="fa fa-archive"></span>
-                                   <span>Modules</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                   <div class="menu-toggler linked" data-toggle="collapse"
                                            data-target="#modules-links"
-                                   ></span>
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
                                </a>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="modules-links"
                    >
                                        <li class="link">
@@ -196,16 +404,22 @@
                            </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
                                    <span class="fa fa-cogs"></span>
                                    <span>Components</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#components-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="components-links"
                    >
+                                       <li class="link">
+                                           <a href="../components/ActivationTokenPageComponent.html" >ActivationTokenPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/AlertComponent.html" >AlertComponent</a>
+                                       </li>
                                        <li class="link">
                                            <a href="../components/AppComponent.html" >AppComponent</a>
                                        </li>
@@ -213,7 +427,13 @@
                                            <a href="../components/AutocompleteComponent.html" >AutocompleteComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/ConfirmComponent.html" >ConfirmComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/ContactPageComponent.html" >ContactPageComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/LoaderComponent.html" >LoaderComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/MenuComponent.html" >MenuComponent</a>
@@ -221,33 +441,225 @@
                                        <li class="link">
                                            <a href="../components/SearchPageComponent.html" >SearchPageComponent</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../components/SidebarComponent.html" >SidebarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SignInPageComponent.html" >SignInPageComponent</a>
+                                       </li>
                                </ul>
                            </li>
                    
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/SearchDirective.html" >SearchDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
                    
                            <li class="chapter">
-                               <div class="simple">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
                                    <span class="fa fa-file-code-o"></span>
                                    <span>Classes</span>
-                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
-                                           data-target="#classes-links"
-                   ></span>
+                                   <span class="fa fa-angle-down"></span>
                                </div>
-                               <ul class="links collapse in"
+                               <ul class="links collapse "
                                        id="classes-links"
                    >
                                        <li class="link">
+                                           <a href="../classes/ActivateTokenAction.html" >ActivateTokenAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ActivateTokensSuccessAction.html" >ActivateTokensSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/AddErrorToLogAction.html" >AddErrorToLogAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/AddRecipeAction.html" >AddRecipeAction</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/AngularCookbookPage.html" >AngularCookbookPage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/CloseSidenavAction.html" >CloseSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HideAlertAction.html" >HideAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HideConfirmAction.html" >HideConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MergeCollectionsAction.html" >MergeCollectionsAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/OpenSidenavAction.html" >OpenSidenavAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/RemoveRecipeAction.html" >RemoveRecipeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SearchAction.html" >SearchAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SearchCompleteAction.html" >SearchCompleteAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ServerConnectionCheckAction.html" >ServerConnectionCheckAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ServerConnectionCheckFailAction.html" >ServerConnectionCheckFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ServerConnectionCheckSuccessAction.html" >ServerConnectionCheckSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ShowAlertAction.html" >ShowAlertAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ShowConfirmAction.html" >ShowConfirmAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignInAction.html" >SignInAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignInFailAction.html" >SignInFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignInSuccessAction.html" >SignInSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignOutAction.html" >SignOutAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignOutFailAction.html" >SignOutFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignOutSuccessAction.html" >SignOutSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignUpAction.html" >SignUpAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignUpFailAction.html" >SignUpFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SignUpSuccessAction.html" >SignUpSuccessAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SizeChangeAction.html" >SizeChangeAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SynchroniseRecipesCollectionAction.html" >SynchroniseRecipesCollectionAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SynchroniseRecipesCollectionFailAction.html" >SynchroniseRecipesCollectionFailAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SynchroniseRecipesCollectionSuccessAction.html" >SynchroniseRecipesCollectionSuccessAction</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/IAlert.html" >IAlert</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IConfirm.html" >IConfirm</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IInternalError.html" >IInternalError</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IRecipe.html" >IRecipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IUser.html" >IUser</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/State.html" >State</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/menuPageAdress.html" >menuPageAdress</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/param.html" >param</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/requestOptions.html" >requestOptions</a>
                                        </li>
                                </ul>
                            </li>
                    
                    
-                   
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
-                           </li>
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
@@ -271,6 +683,8 @@
                <div class="content module">
                    <div class="content-data">
 
+
+
 <ol class="breadcrumb">
   <li>Modules</li>
   <li>AppModule</li>
@@ -284,163 +698,383 @@
 <!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: dependencies Pages: 1 -->
-<svg width="1349pt" height="284pt"
- viewBox="0.00 0.00 1349.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="4649pt" height="284pt"
+ viewBox="0.00 0.00 4649.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 280)">
 <title>dependencies</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-280 1345,-280 1345,4 -4,4"/>
-<text text-anchor="start" x="649.5091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
-<polygon fill="#ffffb3" stroke="transparent" points="436.5,-10 436.5,-30 456.5,-30 456.5,-10 436.5,-10"/>
-<text text-anchor="start" x="460.129" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
-<polygon fill="#8dd3c7" stroke="transparent" points="549.5,-10 549.5,-30 569.5,-30 569.5,-10 549.5,-10"/>
-<text text-anchor="start" x="573.2251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
-<polygon fill="#80b1d3" stroke="transparent" points="635.5,-10 635.5,-30 655.5,-30 655.5,-10 635.5,-10"/>
-<text text-anchor="start" x="659.2812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
-<polygon fill="#fdb462" stroke="transparent" points="732.5,-10 732.5,-30 752.5,-30 752.5,-10 732.5,-10"/>
-<text text-anchor="start" x="756.1732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
-<polygon fill="#fb8072" stroke="transparent" points="828.5,-10 828.5,-30 848.5,-30 848.5,-10 828.5,-10"/>
-<text text-anchor="start" x="852.2258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-280 4645,-280 4645,4 -4,4"/>
+<text text-anchor="start" x="2299.5091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="2086.5,-10 2086.5,-30 2106.5,-30 2106.5,-10 2086.5,-10"/>
+<text text-anchor="start" x="2110.129" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="2199.5,-10 2199.5,-30 2219.5,-30 2219.5,-10 2199.5,-10"/>
+<text text-anchor="start" x="2223.2251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="2285.5,-10 2285.5,-30 2305.5,-30 2305.5,-10 2285.5,-10"/>
+<text text-anchor="start" x="2309.2812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="2382.5,-10 2382.5,-30 2402.5,-30 2402.5,-10 2382.5,-10"/>
+<text text-anchor="start" x="2406.1732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="2478.5,-10 2478.5,-30 2498.5,-30 2498.5,-10 2478.5,-10"/>
+<text text-anchor="start" x="2502.2258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
 <g id="clust1" class="cluster">
 <title>cluster_AppModule</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-268 1333,-268 1333,-70 8,-70"/>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-268 4633,-268 4633,-70 8,-70"/>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_AppModule_declarations</title>
-<polygon fill="none" stroke="#000000" points="558,-78 558,-130 1325,-130 1325,-78 558,-78"/>
+<polygon fill="none" stroke="#000000" points="2705,-78 2705,-130 4625,-130 4625,-78 2705,-78"/>
 </g>
-<g id="clust8" class="cluster">
+<g id="clust16" class="cluster">
 <title>cluster_AppModule_imports</title>
-<polygon fill="none" stroke="#000000" points="16,-78 16,-130 550,-130 550,-78 16,-78"/>
+<polygon fill="none" stroke="#000000" points="1000,-78 1000,-130 2697,-130 2697,-78 1000,-78"/>
 </g>
-<g id="clust10" class="cluster">
+<g id="clust18" class="cluster">
 <title>cluster_AppModule_bootstrap</title>
-<polygon fill="none" stroke="#000000" points="580,-208 580,-260 704,-260 704,-208 580,-208"/>
+<polygon fill="none" stroke="#000000" points="2574,-208 2574,-260 2698,-260 2698,-208 2574,-208"/>
+</g>
+<g id="clust19" class="cluster">
+<title>cluster_AppModule_providers</title>
+<polygon fill="none" stroke="#000000" points="16,-78 16,-130 992,-130 992,-78 16,-78"/>
 </g>
 <!-- AppComponent -->
 <g id="node1" class="node">
 <title>AppComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1316.9399,-122 1211.0601,-122 1211.0601,-86 1316.9399,-86 1316.9399,-122"/>
-<text text-anchor="middle" x="1264" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="4616.9399,-122 4511.0601,-122 4511.0601,-86 4616.9399,-86 4616.9399,-122"/>
+<text text-anchor="middle" x="4564" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppComponent</text>
 </g>
 <!-- AppModule -->
-<g id="node6" class="node">
+<g id="node14" class="node">
 <title>AppModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="683.6571,-187 680.6571,-191 659.6571,-191 656.6571,-187 600.3429,-187 600.3429,-151 683.6571,-151 683.6571,-187"/>
-<text text-anchor="middle" x="642" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="2677.6571,-187 2674.6571,-191 2653.6571,-191 2650.6571,-187 2594.3429,-187 2594.3429,-151 2677.6571,-151 2677.6571,-187"/>
+<text text-anchor="middle" x="2636" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppModule</text>
 </g>
 <!-- AppComponent&#45;&gt;AppModule -->
 <g id="edge1" class="edge">
 <title>AppComponent&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M1264,-122.0109C1264,-144.4852 1264,-180 1264,-180 1264,-180 693.777,-180 693.777,-180"/>
-<polygon fill="#000000" stroke="#000000" points="693.777,-176.5001 683.777,-180 693.777,-183.5001 693.777,-176.5001"/>
+<path fill="none" stroke="#000000" d="M4564,-122.3802C4564,-146.2785 4564,-185 4564,-185 4564,-185 2688.0621,-185 2688.0621,-185"/>
+<polygon fill="#000000" stroke="#000000" points="2688.0621,-181.5001 2678.0621,-185 2688.062,-188.5001 2688.0621,-181.5001"/>
 </g>
 <!-- MenuComponent -->
 <g id="node2" class="node">
 <title>MenuComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1192.9916,-122 1079.0084,-122 1079.0084,-86 1192.9916,-86 1192.9916,-122"/>
-<text text-anchor="middle" x="1136" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MenuComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="4492.9916,-122 4379.0084,-122 4379.0084,-86 4492.9916,-86 4492.9916,-122"/>
+<text text-anchor="middle" x="4436" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">MenuComponent</text>
 </g>
 <!-- MenuComponent&#45;&gt;AppModule -->
 <g id="edge2" class="edge">
 <title>MenuComponent&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M1136,-122.1289C1136,-142.5724 1136,-173 1136,-173 1136,-173 693.6924,-173 693.6924,-173"/>
-<polygon fill="#000000" stroke="#000000" points="693.6924,-169.5001 683.6924,-173 693.6924,-176.5001 693.6924,-169.5001"/>
+<path fill="none" stroke="#000000" d="M4436,-122.0908C4436,-145.1328 4436,-182 4436,-182 4436,-182 2687.8442,-182 2687.8442,-182"/>
+<polygon fill="#000000" stroke="#000000" points="2687.8442,-178.5001 2677.8442,-182 2687.8441,-185.5001 2687.8442,-178.5001"/>
 </g>
 <!-- AutocompleteComponent -->
 <g id="node3" class="node">
 <title>AutocompleteComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1061.1456,-122 900.8544,-122 900.8544,-86 1061.1456,-86 1061.1456,-122"/>
-<text text-anchor="middle" x="981" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">AutocompleteComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="4361.1456,-122 4200.8544,-122 4200.8544,-86 4361.1456,-86 4361.1456,-122"/>
+<text text-anchor="middle" x="4281" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">AutocompleteComponent</text>
 </g>
 <!-- AutocompleteComponent&#45;&gt;AppModule -->
 <g id="edge3" class="edge">
 <title>AutocompleteComponent&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M981,-122.2667C981,-140.5552 981,-166 981,-166 981,-166 693.9081,-166 693.9081,-166"/>
-<polygon fill="#000000" stroke="#000000" points="693.9081,-162.5001 683.9081,-166 693.908,-169.5001 693.9081,-162.5001"/>
+<path fill="none" stroke="#000000" d="M4281,-122.0109C4281,-144.4852 4281,-180 4281,-180 4281,-180 2687.9001,-180 2687.9001,-180"/>
+<polygon fill="#000000" stroke="#000000" points="2687.9001,-176.5001 2677.9001,-180 2687.9001,-183.5001 2687.9001,-176.5001"/>
 </g>
 <!-- SearchPageComponent -->
 <g id="node4" class="node">
 <title>SearchPageComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="882.1317,-122 735.8683,-122 735.8683,-86 882.1317,-86 882.1317,-122"/>
-<text text-anchor="middle" x="809" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SearchPageComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="4182.1317,-122 4035.8683,-122 4035.8683,-86 4182.1317,-86 4182.1317,-122"/>
+<text text-anchor="middle" x="4109" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SearchPageComponent</text>
 </g>
 <!-- SearchPageComponent&#45;&gt;AppModule -->
 <g id="edge4" class="edge">
 <title>SearchPageComponent&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M809,-122.0091C809,-138.0494 809,-159 809,-159 809,-159 693.7104,-159 693.7104,-159"/>
-<polygon fill="#000000" stroke="#000000" points="693.7104,-155.5001 683.7104,-159 693.7103,-162.5001 693.7104,-155.5001"/>
+<path fill="none" stroke="#000000" d="M4109,-122.0449C4109,-143.6623 4109,-177 4109,-177 4109,-177 2687.7113,-177 2687.7113,-177"/>
+<polygon fill="#000000" stroke="#000000" points="2687.7113,-173.5001 2677.7113,-177 2687.7112,-180.5001 2687.7113,-173.5001"/>
 </g>
 <!-- ContactPageComponent -->
 <g id="node5" class="node">
 <title>ContactPageComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="718.0912,-122 565.9088,-122 565.9088,-86 718.0912,-86 718.0912,-122"/>
-<text text-anchor="middle" x="642" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ContactPageComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="4018.0912,-122 3865.9088,-122 3865.9088,-86 4018.0912,-86 4018.0912,-122"/>
+<text text-anchor="middle" x="3942" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ContactPageComponent</text>
 </g>
 <!-- ContactPageComponent&#45;&gt;AppModule -->
 <g id="edge5" class="edge">
 <title>ContactPageComponent&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M642,-122.1061C642,-122.1061 642,-140.991 642,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="638.5001,-140.9909 642,-150.991 645.5001,-140.991 638.5001,-140.9909"/>
+<path fill="none" stroke="#000000" d="M3942,-122.2843C3942,-143.3211 3942,-175 3942,-175 3942,-175 2687.9738,-175 2687.9738,-175"/>
+<polygon fill="#000000" stroke="#000000" points="2687.9738,-171.5001 2677.9738,-175 2687.9738,-178.5001 2687.9738,-171.5001"/>
+</g>
+<!-- ActivationTokenPageComponent -->
+<g id="node6" class="node">
+<title>ActivationTokenPageComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="3847.91,-122 3644.09,-122 3644.09,-86 3847.91,-86 3847.91,-122"/>
+<text text-anchor="middle" x="3746" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ActivationTokenPageComponent</text>
+</g>
+<!-- ActivationTokenPageComponent&#45;&gt;AppModule -->
+<g id="edge6" class="edge">
+<title>ActivationTokenPageComponent&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M3746,-122.2228C3746,-142.3652 3746,-172 3746,-172 3746,-172 2687.8221,-172 2687.8221,-172"/>
+<polygon fill="#000000" stroke="#000000" points="2687.8221,-168.5001 2677.8221,-172 2687.822,-175.5001 2687.8221,-168.5001"/>
+</g>
+<!-- SearchDirective -->
+<g id="node7" class="node">
+<title>SearchDirective</title>
+<polygon fill="#ffffb3" stroke="#000000" points="3626.1699,-122 3519.8301,-122 3519.8301,-86 3626.1699,-86 3626.1699,-122"/>
+<text text-anchor="middle" x="3573" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SearchDirective</text>
+</g>
+<!-- SearchDirective&#45;&gt;AppModule -->
+<g id="edge7" class="edge">
+<title>SearchDirective&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M3573,-122.1061C3573,-141.3391 3573,-169 3573,-169 3573,-169 2687.7755,-169 2687.7755,-169"/>
+<polygon fill="#000000" stroke="#000000" points="2687.7755,-165.5001 2677.7755,-169 2687.7755,-172.5001 2687.7755,-165.5001"/>
+</g>
+<!-- SidebarComponent -->
+<g id="node8" class="node">
+<title>SidebarComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="3502.0954,-122 3377.9046,-122 3377.9046,-86 3502.0954,-86 3502.0954,-122"/>
+<text text-anchor="middle" x="3440" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SidebarComponent</text>
+</g>
+<!-- SidebarComponent&#45;&gt;AppModule -->
+<g id="edge8" class="edge">
+<title>SidebarComponent&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M3440,-122.2222C3440,-140.8285 3440,-167 3440,-167 3440,-167 2687.8136,-167 2687.8136,-167"/>
+<polygon fill="#000000" stroke="#000000" points="2687.8136,-163.5001 2677.8136,-167 2687.8136,-170.5001 2687.8136,-163.5001"/>
+</g>
+<!-- LoaderComponent -->
+<g id="node9" class="node">
+<title>LoaderComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="3359.4748,-122 3238.5252,-122 3238.5252,-86 3359.4748,-86 3359.4748,-122"/>
+<text text-anchor="middle" x="3299" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">LoaderComponent</text>
+</g>
+<!-- LoaderComponent&#45;&gt;AppModule -->
+<g id="edge9" class="edge">
+<title>LoaderComponent&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M3299,-122.002C3299,-139.6754 3299,-164 3299,-164 3299,-164 2687.7248,-164 2687.7248,-164"/>
+<polygon fill="#000000" stroke="#000000" points="2687.7248,-160.5001 2677.7248,-164 2687.7247,-167.5001 2687.7248,-160.5001"/>
+</g>
+<!-- SignInPageComponent -->
+<g id="node10" class="node">
+<title>SignInPageComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="3220.8781,-122 3075.1219,-122 3075.1219,-86 3220.8781,-86 3220.8781,-122"/>
+<text text-anchor="middle" x="3148" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">SignInPageComponent</text>
+</g>
+<!-- SignInPageComponent&#45;&gt;AppModule -->
+<g id="edge10" class="edge">
+<title>SignInPageComponent&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M3148,-122.0336C3148,-139.0597 3148,-162 3148,-162 3148,-162 2687.8991,-162 2687.8991,-162"/>
+<polygon fill="#000000" stroke="#000000" points="2687.8991,-158.5001 2677.8991,-162 2687.8991,-165.5001 2687.8991,-158.5001"/>
+</g>
+<!-- AlertComponent -->
+<g id="node11" class="node">
+<title>AlertComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="3057.0954,-122 2946.9046,-122 2946.9046,-86 3057.0954,-86 3057.0954,-122"/>
+<text text-anchor="middle" x="3002" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">AlertComponent</text>
+</g>
+<!-- AlertComponent&#45;&gt;AppModule -->
+<g id="edge11" class="edge">
+<title>AlertComponent&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M3002,-122.0091C3002,-138.0494 3002,-159 3002,-159 3002,-159 2687.9849,-159 2687.9849,-159"/>
+<polygon fill="#000000" stroke="#000000" points="2687.9849,-155.5001 2677.9849,-159 2687.9848,-162.5001 2687.9849,-155.5001"/>
+</g>
+<!-- ConfirmComponent -->
+<g id="node12" class="node">
+<title>ConfirmComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="2929.2716,-122 2800.7284,-122 2800.7284,-86 2929.2716,-86 2929.2716,-122"/>
+<text text-anchor="middle" x="2865" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ConfirmComponent</text>
+</g>
+<!-- ConfirmComponent&#45;&gt;AppModule -->
+<g id="edge12" class="edge">
+<title>ConfirmComponent&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M2865,-122.2396C2865,-137.5706 2865,-157 2865,-157 2865,-157 2687.7359,-157 2687.7359,-157"/>
+<polygon fill="#000000" stroke="#000000" points="2687.7359,-153.5001 2677.7359,-157 2687.7358,-160.5001 2687.7359,-153.5001"/>
+</g>
+<!-- NgModel -->
+<g id="node13" class="node">
+<title>NgModel</title>
+<polygon fill="#ffffb3" stroke="#000000" points="2782.6572,-122 2713.3428,-122 2713.3428,-86 2782.6572,-86 2782.6572,-122"/>
+<text text-anchor="middle" x="2748" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">NgModel</text>
+</g>
+<!-- NgModel&#45;&gt;AppModule -->
+<g id="edge13" class="edge">
+<title>NgModel&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M2748,-122.0511C2748,-136.373 2748,-154 2748,-154 2748,-154 2687.7047,-154 2687.7047,-154"/>
+<polygon fill="#000000" stroke="#000000" points="2687.7047,-150.5001 2677.7047,-154 2687.7046,-157.5001 2687.7047,-150.5001"/>
 </g>
 <!-- AppComponent  -->
-<g id="node11" class="node">
+<g id="node24" class="node">
 <title>AppComponent </title>
-<polygon fill="#80b1d3" stroke="#000000" points="696.439,-252 587.561,-252 587.561,-216 696.439,-216 696.439,-252"/>
-<text text-anchor="middle" x="642" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppComponent </text>
+<polygon fill="#80b1d3" stroke="#000000" points="2690.439,-252 2581.561,-252 2581.561,-216 2690.439,-216 2690.439,-252"/>
+<text text-anchor="middle" x="2636" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">AppComponent </text>
 </g>
 <!-- AppModule&#45;&gt;AppComponent  -->
-<g id="edge10" class="edge">
+<g id="edge23" class="edge">
 <title>AppModule&#45;&gt;AppComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M642,-187.1061C642,-187.1061 642,-205.991 642,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="638.5001,-205.9909 642,-215.991 645.5001,-205.991 638.5001,-205.9909"/>
+<path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M2636,-187.1061C2636,-187.1061 2636,-205.991 2636,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="2632.5001,-205.9909 2636,-215.991 2639.5001,-205.991 2632.5001,-205.9909"/>
 </g>
 <!-- BrowserModule -->
-<g id="node7" class="node">
+<g id="node15" class="node">
 <title>BrowserModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="542.4734,-122 539.4734,-126 518.4734,-126 515.4734,-122 435.5266,-122 435.5266,-86 542.4734,-86 542.4734,-122"/>
-<text text-anchor="middle" x="489" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">BrowserModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="2689.4734,-122 2686.4734,-126 2665.4734,-126 2662.4734,-122 2582.5266,-122 2582.5266,-86 2689.4734,-86 2689.4734,-122"/>
+<text text-anchor="middle" x="2636" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">BrowserModule</text>
 </g>
 <!-- BrowserModule&#45;&gt;AppModule -->
-<g id="edge6" class="edge">
+<g id="edge14" class="edge">
 <title>BrowserModule&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M489,-122.0091C489,-138.0494 489,-159 489,-159 489,-159 590.1921,-159 590.1921,-159"/>
-<polygon fill="#000000" stroke="#000000" points="590.1921,-162.5001 600.1921,-159 590.192,-155.5001 590.1921,-162.5001"/>
+<path fill="none" stroke="#000000" d="M2636,-122.1061C2636,-122.1061 2636,-140.991 2636,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="2632.5001,-140.9909 2636,-150.991 2639.5001,-140.991 2632.5001,-140.9909"/>
 </g>
-<!-- FormsModule -->
-<g id="node8" class="node">
-<title>FormsModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="417.8288,-122 414.8288,-126 393.8288,-126 390.8288,-122 322.1712,-122 322.1712,-86 417.8288,-86 417.8288,-122"/>
-<text text-anchor="middle" x="370" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">FormsModule</text>
+<!-- ReactiveFormsModule -->
+<g id="node16" class="node">
+<title>ReactiveFormsModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="2564.3047,-122 2561.3047,-126 2540.3047,-126 2537.3047,-122 2419.6953,-122 2419.6953,-86 2564.3047,-86 2564.3047,-122"/>
+<text text-anchor="middle" x="2492" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">ReactiveFormsModule</text>
 </g>
-<!-- FormsModule&#45;&gt;AppModule -->
-<g id="edge7" class="edge">
-<title>FormsModule&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M370,-122.2667C370,-140.5552 370,-166 370,-166 370,-166 590.0961,-166 590.0961,-166"/>
-<polygon fill="#000000" stroke="#000000" points="590.0961,-169.5001 600.0961,-166 590.0961,-162.5001 590.0961,-169.5001"/>
+<!-- ReactiveFormsModule&#45;&gt;AppModule -->
+<g id="edge15" class="edge">
+<title>ReactiveFormsModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M2492,-122.0511C2492,-136.373 2492,-154 2492,-154 2492,-154 2583.9621,-154 2583.9621,-154"/>
+<polygon fill="#000000" stroke="#000000" points="2583.9622,-157.5001 2593.9621,-154 2583.9621,-150.5001 2583.9622,-157.5001"/>
 </g>
-<!-- HttpModule -->
-<g id="node9" class="node">
-<title>HttpModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="304.4387,-122 301.4387,-126 280.4387,-126 277.4387,-122 219.5613,-122 219.5613,-86 304.4387,-86 304.4387,-122"/>
-<text text-anchor="middle" x="262" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">HttpModule</text>
+<!-- StoreModule.provideStore(args) -->
+<g id="node17" class="node">
+<title>StoreModule.provideStore(args)</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="2401.5539,-122 2398.5539,-126 2377.5539,-126 2374.5539,-122 2204.4461,-122 2204.4461,-86 2401.5539,-86 2401.5539,-122"/>
+<text text-anchor="middle" x="2303" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">StoreModule.provideStore(args)</text>
 </g>
-<!-- HttpModule&#45;&gt;AppModule -->
-<g id="edge8" class="edge">
-<title>HttpModule&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M262,-122.1289C262,-142.5724 262,-173 262,-173 262,-173 590.2463,-173 590.2463,-173"/>
-<polygon fill="#000000" stroke="#000000" points="590.2464,-176.5001 600.2463,-173 590.2463,-169.5001 590.2464,-176.5001"/>
+<!-- StoreModule.provideStore(args)&#45;&gt;AppModule -->
+<g id="edge16" class="edge">
+<title>StoreModule.provideStore(args)&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M2303,-122.2396C2303,-137.5706 2303,-157 2303,-157 2303,-157 2584.1625,-157 2584.1625,-157"/>
+<polygon fill="#000000" stroke="#000000" points="2584.1625,-160.5001 2594.1625,-157 2584.1625,-153.5001 2584.1625,-160.5001"/>
+</g>
+<!-- StoreDevtoolsModule.instrumentOnlyWithExtension() -->
+<g id="node18" class="node">
+<title>StoreDevtoolsModule.instrumentOnlyWithExtension()</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="2186.3348,-122 2183.3348,-126 2162.3348,-126 2159.3348,-122 1861.6652,-122 1861.6652,-86 2186.3348,-86 2186.3348,-122"/>
+<text text-anchor="middle" x="2024" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">StoreDevtoolsModule.instrumentOnlyWithExtension()</text>
+</g>
+<!-- StoreDevtoolsModule.instrumentOnlyWithExtension()&#45;&gt;AppModule -->
+<g id="edge17" class="edge">
+<title>StoreDevtoolsModule.instrumentOnlyWithExtension()&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M2024,-122.0091C2024,-138.0494 2024,-159 2024,-159 2024,-159 2583.9348,-159 2583.9348,-159"/>
+<polygon fill="#000000" stroke="#000000" points="2583.9348,-162.5001 2593.9348,-159 2583.9347,-155.5001 2583.9348,-162.5001"/>
 </g>
 <!-- RouterModule.forRoot(args) -->
-<g id="node10" class="node">
+<g id="node19" class="node">
 <title>RouterModule.forRoot(args)</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="201.8419,-122 198.8419,-126 177.8419,-126 174.8419,-122 24.1581,-122 24.1581,-86 201.8419,-86 201.8419,-122"/>
-<text text-anchor="middle" x="113" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">RouterModule.forRoot(args)</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="1843.8419,-122 1840.8419,-126 1819.8419,-126 1816.8419,-122 1666.1581,-122 1666.1581,-86 1843.8419,-86 1843.8419,-122"/>
+<text text-anchor="middle" x="1755" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">RouterModule.forRoot(args)</text>
 </g>
 <!-- RouterModule.forRoot(args)&#45;&gt;AppModule -->
-<g id="edge9" class="edge">
+<g id="edge18" class="edge">
 <title>RouterModule.forRoot(args)&#45;&gt;AppModule</title>
-<path fill="none" stroke="#000000" d="M113,-122.0109C113,-144.4852 113,-180 113,-180 113,-180 590.0481,-180 590.0481,-180"/>
-<polygon fill="#000000" stroke="#000000" points="590.0481,-183.5001 600.0481,-180 590.0481,-176.5001 590.0481,-183.5001"/>
+<path fill="none" stroke="#000000" d="M1755,-122.0336C1755,-139.0597 1755,-162 1755,-162 1755,-162 2584.1002,-162 2584.1002,-162"/>
+<polygon fill="#000000" stroke="#000000" points="2584.1003,-165.5001 2594.1002,-162 2584.1002,-158.5001 2584.1003,-165.5001"/>
+</g>
+<!-- RouterStoreModule.connectRouter() -->
+<g id="node20" class="node">
+<title>RouterStoreModule.connectRouter()</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="1647.6589,-122 1644.6589,-126 1623.6589,-126 1620.6589,-122 1426.3411,-122 1426.3411,-86 1647.6589,-86 1647.6589,-122"/>
+<text text-anchor="middle" x="1537" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">RouterStoreModule.connectRouter()</text>
+</g>
+<!-- RouterStoreModule.connectRouter()&#45;&gt;AppModule -->
+<g id="edge19" class="edge">
+<title>RouterStoreModule.connectRouter()&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M1537,-122.002C1537,-139.6754 1537,-164 1537,-164 1537,-164 2584.2599,-164 2584.2599,-164"/>
+<polygon fill="#000000" stroke="#000000" points="2584.2599,-167.5001 2594.2599,-164 2584.2599,-160.5001 2584.2599,-167.5001"/>
+</g>
+<!-- JsonpModule -->
+<g id="node21" class="node">
+<title>JsonpModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="1407.9401,-122 1404.9401,-126 1383.9401,-126 1380.9401,-122 1316.0599,-122 1316.0599,-86 1407.9401,-86 1407.9401,-122"/>
+<text text-anchor="middle" x="1362" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">JsonpModule</text>
+</g>
+<!-- JsonpModule&#45;&gt;AppModule -->
+<g id="edge20" class="edge">
+<title>JsonpModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M1362,-122.2222C1362,-140.8285 1362,-167 1362,-167 1362,-167 2584.3361,-167 2584.3361,-167"/>
+<polygon fill="#000000" stroke="#000000" points="2584.3361,-170.5001 2594.3361,-167 2584.336,-163.5001 2584.3361,-170.5001"/>
+</g>
+<!-- HttpClientModule -->
+<g id="node22" class="node">
+<title>HttpClientModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="1298.1611,-122 1295.1611,-126 1274.1611,-126 1271.1611,-122 1179.8389,-122 1179.8389,-86 1298.1611,-86 1298.1611,-122"/>
+<text text-anchor="middle" x="1239" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">HttpClientModule</text>
+</g>
+<!-- HttpClientModule&#45;&gt;AppModule -->
+<g id="edge21" class="edge">
+<title>HttpClientModule&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M1239,-122.1061C1239,-141.3391 1239,-169 1239,-169 1239,-169 2584.1906,-169 2584.1906,-169"/>
+<polygon fill="#000000" stroke="#000000" points="2584.1906,-172.5001 2594.1906,-169 2584.1905,-165.5001 2584.1906,-172.5001"/>
+</g>
+<!-- EffectsModule.run(args) -->
+<g id="node23" class="node">
+<title>EffectsModule.run(args)</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="1161.9896,-122 1158.9896,-126 1137.9896,-126 1134.9896,-122 1008.0104,-122 1008.0104,-86 1161.9896,-86 1161.9896,-122"/>
+<text text-anchor="middle" x="1085" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">EffectsModule.run(args)</text>
+</g>
+<!-- EffectsModule.run(args)&#45;&gt;AppModule -->
+<g id="edge22" class="edge">
+<title>EffectsModule.run(args)&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M1085,-122.2228C1085,-142.3652 1085,-172 1085,-172 1085,-172 2584.1132,-172 2584.1132,-172"/>
+<polygon fill="#000000" stroke="#000000" points="2584.1132,-175.5001 2594.1132,-172 2584.1132,-168.5001 2584.1132,-175.5001"/>
+</g>
+<!-- JsonpRequestService -->
+<g id="node25" class="node">
+<title>JsonpRequestService</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="891" cy="-104" rx="93.1968" ry="18"/>
+<text text-anchor="middle" x="891" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">JsonpRequestService</text>
+</g>
+<!-- JsonpRequestService&#45;&gt;AppModule -->
+<g id="edge24" class="edge">
+<title>JsonpRequestService&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M891,-122.2843C891,-143.3211 891,-175 891,-175 891,-175 2584.1588,-175 2584.1588,-175"/>
+<polygon fill="#000000" stroke="#000000" points="2584.1589,-178.5001 2594.1588,-175 2584.1588,-171.5001 2584.1589,-178.5001"/>
+</g>
+<!-- NodeCookbookRequestsFactory -->
+<g id="node26" class="node">
+<title>NodeCookbookRequestsFactory</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="643" cy="-104" rx="136.6072" ry="18"/>
+<text text-anchor="middle" x="643" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">NodeCookbookRequestsFactory</text>
+</g>
+<!-- NodeCookbookRequestsFactory&#45;&gt;AppModule -->
+<g id="edge25" class="edge">
+<title>NodeCookbookRequestsFactory&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M643,-122.0449C643,-143.6623 643,-177 643,-177 643,-177 2583.9135,-177 2583.9135,-177"/>
+<polygon fill="#000000" stroke="#000000" points="2583.9136,-180.5001 2593.9135,-177 2583.9135,-173.5001 2583.9136,-180.5001"/>
+</g>
+<!-- Actions -->
+<g id="node27" class="node">
+<title>Actions</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="447" cy="-104" rx="41.149" ry="18"/>
+<text text-anchor="middle" x="447" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">Actions</text>
+</g>
+<!-- Actions&#45;&gt;AppModule -->
+<g id="edge26" class="edge">
+<title>Actions&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M447,-122.0109C447,-144.4852 447,-180 447,-180 447,-180 2584.2265,-180 2584.2265,-180"/>
+<polygon fill="#000000" stroke="#000000" points="2584.2265,-183.5001 2594.2265,-180 2584.2264,-176.5001 2584.2265,-183.5001"/>
+</g>
+<!-- HttpApiEffectsService -->
+<g id="node28" class="node">
+<title>HttpApiEffectsService</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="289" cy="-104" rx="98.9685" ry="18"/>
+<text text-anchor="middle" x="289" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">HttpApiEffectsService</text>
+</g>
+<!-- HttpApiEffectsService&#45;&gt;AppModule -->
+<g id="edge27" class="edge">
+<title>HttpApiEffectsService&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M289,-122.0908C289,-145.1328 289,-182 289,-182 289,-182 2584.2673,-182 2584.2673,-182"/>
+<polygon fill="#000000" stroke="#000000" points="2584.2674,-185.5001 2594.2673,-182 2584.2673,-178.5001 2584.2674,-185.5001"/>
+</g>
+<!-- UnstoredEffects -->
+<g id="node29" class="node">
+<title>UnstoredEffects</title>
+<ellipse fill="#fdb462" stroke="#000000" cx="98" cy="-104" rx="73.5522" ry="18"/>
+<text text-anchor="middle" x="98" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">UnstoredEffects</text>
+</g>
+<!-- UnstoredEffects&#45;&gt;AppModule -->
+<g id="edge28" class="edge">
+<title>UnstoredEffects&#45;&gt;AppModule</title>
+<path fill="none" stroke="#000000" d="M98,-122.3802C98,-146.2785 98,-185 98,-185 98,-185 2584.327,-185 2584.327,-185"/>
+<polygon fill="#000000" stroke="#000000" points="2584.3271,-188.5001 2594.327,-185 2584.327,-181.5001 2584.3271,-188.5001"/>
 </g>
 </g>
 </svg>
@@ -457,15 +1091,18 @@
 
 <ul class="nav nav-tabs" role="tablist">
     <li class="active">
-        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
     </li>
+    
+
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
     </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="infos">
+    <div class="tab-pane fade active in" id="info">
+
         <p class="comment">
             <h3>File</h3>
         </p>
@@ -494,6 +1131,47 @@
                             <li class="list-group-item">
                                 <a href="../components/ContactPageComponent.html">ContactPageComponent</a>
                             </li>
+                            <li class="list-group-item">
+                                <a href="../components/ActivationTokenPageComponent.html">ActivationTokenPageComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../directives/SearchDirective.html">SearchDirective</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/SidebarComponent.html">SidebarComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/LoaderComponent.html">LoaderComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/SignInPageComponent.html">SignInPageComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/AlertComponent.html">AlertComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/ConfirmComponent.html">ConfirmComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../s/NgModel.html">NgModel</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Providers<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#providers-anchor" target="_blank"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../injectables/JsonpRequestService.html" >JsonpRequestService</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../injectables/NodeCookbookRequestsFactory.html" >NodeCookbookRequestsFactory</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../injectables/HttpApiEffectsService.html" >HttpApiEffectsService</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../injectables/UnstoredEffects.html" >UnstoredEffects</a>
+                            </li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
@@ -507,16 +1185,19 @@
             </div>
         </div>
     </div>
+
+
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { BrowserModule } from &#x27;@angular/platform-browser&#x27;;
-import { NgModule } from &#x27;@angular/core&#x27;;
-import { FormsModule } from &#x27;@angular/forms&#x27;;
-import { HttpModule } from &#x27;@angular/http&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
+import { BrowserModule } from &#x27;@angular/platform-browser&#x27;;
+import { ReactiveFormsModule, NgModel } from &#x27;@angular/forms&#x27;;
+import { HttpClientModule } from &#x27;@angular/common/http&#x27;;
+import { JsonpModule } from &#x27;@angular/http&#x27;;
 
 // ---------------- ngrx  ------------------- //
-import { StoreModule } from &#x27;@ngrx/store&#x27;;
-import { EffectsModule } from &#x27;@ngrx/effects&#x27;;
-import { RouterStoreModule } from &#x27;@ngrx/router-store&#x27;;
+import { StoreModule, Store } from &#x27;@ngrx/store&#x27;;
+import { EffectsModule, Actions } from &#x27;@ngrx/effects&#x27;;
+import { routerReducer, RouterStoreModule } from &#x27;@ngrx/router-store&#x27;;
 import { StoreDevtoolsModule } from &#x27;@ngrx/store-devtools&#x27;;
 
 // ---------------- routing  ---------------------- //
@@ -525,31 +1206,90 @@ import { routes } from &#x27;./routes&#x27;;
 
 // ---------------- components  ---------------------- //
 import { AppComponent } from &#x27;./components/app.component&#x27;;
-import { MenuComponent } from &#x27;./components/menu.component&#x27;;
-import { AutocompleteComponent } from &#x27;./components/autocomplete.component&#x27;;
+
+import { MenuComponent } from &#x27;./components/UI/menu/menu.component&#x27;;
+import { AutocompleteComponent } from &#x27;./components/UI/autocomplete/autocomplete.component&#x27;;
+import { SidebarComponent } from &#x27;./components/UI/sidebar/sidebar.component&#x27;;
+import { LoaderComponent } from &#x27;./components/UI/loader/loader.component&#x27;;
+import { AlertComponent } from &#x27;./components/UI/alert/alert.component&#x27;;
+import { ConfirmComponent } from &#x27;./components/UI/confirm/confirm.component&#x27;;
+
 import { SearchPageComponent } from &#x27;./components/pages/search/search-page.component&#x27;;
 import { ContactPageComponent } from &#x27;./components/pages/contact/contact-page.component&#x27;;
+import { SignInPageComponent } from &#x27;./components/pages/sign-in/sign-in.component&#x27;;
+import { ActivationTokenPageComponent } from &#x27;./components/pages/activation-token/activation-token-page.component&#x27;;
 
-// ------------------ // // ------------------------//
+// ---------------- directives  ---------------- //
+import { SearchDirective } from &#x27;./directives/search.directive&#x27;;
+
+// ------------------ // http services // ------------------------//
+import { HttpApiEffectsService} from &#x27;./services/http-api.effects&#x27;;
+import { JsonpRequestService } from &#x27;./services/jsonp-request.service&#x27;;
+import { NodeCookbookRequestsFactory } from &#x27;./services/node-cookbook-requests.factory&#x27;;
+
+
+// ------------------ // effects // ------------------------//
+import { UnstoredEffects } from &#x27;./services/unstored.effects&#x27;;
+
+// ------------------- // state managing // -------------------- //
+import { reducer, State } from &#x27;./reducers&#x27;;
+
+
+
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-  //  StoreModule.provideStore(reducer),
-    RouterModule.forRoot(routes, { useHash: true }),
+    ReactiveFormsModule,
+    StoreModule.provideStore(reducer, {
+      router: {
+        path: window.location.pathname + window.location.search
+      }
+    }),
+    StoreDevtoolsModule.instrumentOnlyWithExtension(),
+    RouterModule.forRoot(routes, { useHash: false }),
+    RouterStoreModule.connectRouter(),
+    JsonpModule,
+    HttpClientModule,
+    EffectsModule.run(HttpApiEffectsService)
   ],
   declarations: [
     AppComponent,
+    // BodyComponent,
     MenuComponent,
     AutocompleteComponent,
     SearchPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ActivationTokenPageComponent,
+    SearchDirective,
+    SidebarComponent,
+    LoaderComponent,
+    SignInPageComponent,
+    AlertComponent,
+    ConfirmComponent,
+    NgModel
   ],
-  providers: [],
+  providers: [
+    JsonpRequestService,
+    NodeCookbookRequestsFactory,
+    Actions,
+    HttpApiEffectsService,
+    UnstoredEffects
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(
+      private store: Store&lt;State&gt;,
+      private httpApiEffectsService: HttpApiEffectsService
+  ){
+    // this.store.dispatch(new ServerConnectionCheckAction());
+    // this.store.dispatch(new ShowConfirmAction({ header:&#x27;Please confirm&#x27;, message: &#x27;Tadam something&#x27;, onConfirm: this.doSomething }));
+  }
+
+  doSomething(): void {
+        debugger;
+  }
+}
 </code></pre>
     </div>
 </div>
