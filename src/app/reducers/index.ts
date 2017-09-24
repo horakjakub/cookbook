@@ -75,7 +75,9 @@ export const getLayoutState = (state: State) => state.layout;
 export const getShowSidenav = createSelector(getLayoutState, fromLayout.getShowSidenav);
 export const getShowAlert = createSelector(getLayoutState, fromLayout.getShowAlert);
 export const getAlertInfo = createSelector(getLayoutState, fromLayout.getAlertInfo);
-
+export const getShowConfirm = createSelector(getLayoutState, fromLayout.getShowConfirm);
+export const getConfirmInfo = createSelector(getLayoutState, fromLayout.getConfirmInfo);
+export const getSize = createSelector(getLayoutState, fromLayout.getSize);
 
 // ----------- // Search // --------------//
 export const getSearchState = (state: State) => state.search;

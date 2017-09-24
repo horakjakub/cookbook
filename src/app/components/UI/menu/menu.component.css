@@ -5,6 +5,7 @@
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   z-index: 10;
   display: flex;
+  height: 6em;
 }
 
 .menu__list__icon__wrapper {
@@ -13,6 +14,8 @@
 
 .menu__list__wraper {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .menu__list {
@@ -48,16 +51,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.2em 1.3em 0.3em 1.3em;
+  padding: 1.4em 1.3em 1.2em 1.3em;
 }
 
 .menu__list__icon {
   color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  font-size: 2.5em;
   transition: color 0.4s ease-in-out;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 60em) {
   .menu__list {
     position: absolute;
     flex-direction: column;
@@ -76,7 +80,7 @@
   }
 }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 60em) {
   .menu__list__icon__wrapper {
     visibility: hidden;
     opacity: 0;
@@ -106,6 +110,7 @@
   display: flex;
   align-items: center;
   flex: 1 1 auto;
+  margin-right: 1em;
 }
 
 .menu__search__input {
@@ -163,7 +168,8 @@
 .menu__icons__container {
   display: flex;
   justify-content: center;
-  padding: 1.2em 1em 1em 1em;
+  align-items: center;
+  padding: 0 1em;
   margin: 0 1em 0 auto;
 }
 
@@ -181,4 +187,13 @@
 
 .menu__favorite__icon--selected {
   color: #00B298;
+}
+
+.menu__range__wrapper {
+  width: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1em 0 auto;
+  min-width: 7em;
 }

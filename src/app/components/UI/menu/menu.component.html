@@ -21,6 +21,9 @@
       <i class="material-icons menu__search__icon">arrow_forward</i>
     </button>
   </div>
+  <div class="menu__range__wrapper">
+  <input type="range" min="6" max="14" step="1" (change)="changeSize(rangeValue)" [(ngModel)]="rangeValue">
+  </div>
   <div class="menu__icons__container" *ngIf="(selectedPage$ | async).path === '/search' && serverOnline">
     <i class="material-icons menu__favorite__icon" (click)="toggleSidenav()" [ngClass]="{ 'menu__favorite__icon--selected': showSidenav$ | async, 'menu__favorite__icon--alerting': favoritesRecipes.length > 0 }">favorite_border</i>
   </div>

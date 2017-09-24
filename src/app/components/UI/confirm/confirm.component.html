@@ -1,0 +1,19 @@
+<div class="confirm__background"
+     [ngClass]="{'confirm__background--visible': (confirmVisible$ | async) }" (click)="closeConfirm($event)">
+  <div class="confirm__container">
+    <header class="confirm__header" *ngIf=" confirmHeader.length > 0">
+      {{ confirmHeader }}
+    </header>
+    <section class="confirm__message">
+      {{ confirmMessage }}
+    </section>
+    <footer class="confirm__footer">
+      <div class="btn btn-primary confirm__button" (click)="onConfirm($event)">
+        OK
+      </div>
+      <div class="btn btn-grey cancel__button" (click)="closeConfirm($event)">
+        CANCEL
+      </div>
+    </footer>
+  </div>
+</div>

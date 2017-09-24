@@ -1,7 +1,7 @@
 <div class="sidebar__container" [ngClass]="{'sidebar__container--visible': (showSidenav$ | async )}">
   <div class="sidebar__content">
     <header class="sidebar__header" *ngIf="!signedIn">
-      You are not signed in, so list of favorites will not be saved. We highly recommend to <a (click)="goToSignIn()">sign in</a>, to fully enjoy the app features.
+      You are not signed in, so list of favorites will not be saved. We highly recommend to <a (click)="goToSignIn()">sign in</a>, to fully enjoy app features.
     </header>
     <div class="favorites-list-item__container" *ngFor="let recipe of favoritesRecipes; let i = index;" [ngClass]="{ 'favorites-list-item__container--selected': isRecipeExpanded(recipe) }">
         <header class="favorites-list-item__header" (click)="toggleRecipe(recipe)">
@@ -12,6 +12,9 @@
           <div class="favorites-list-item__label">
             {{ recipe.label }}
           </div>
+        <!--<div class="favorites-list-item__icon__wrapper">-->
+            <!--<i class="material-icons favorites-list-item__icon favorites-list-item__send__icon">email</i>-->
+        <!--</div>-->
           <div class="favorites-list-item__icon__wrapper">
               <i class="material-icons favorites-list-item__icon favorites-list-item__close__icon" (click)="removeRecipeFromFavorites($event, recipe)">close</i>
           </div>

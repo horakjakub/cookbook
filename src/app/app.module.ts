@@ -1,8 +1,7 @@
 // ---------------- angular  ------------------- //
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, NgModel } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { JsonpModule } from '@angular/http';
 
@@ -24,6 +23,7 @@ import { AutocompleteComponent } from './components/UI/autocomplete/autocomplete
 import { SidebarComponent } from './components/UI/sidebar/sidebar.component';
 import { LoaderComponent } from './components/UI/loader/loader.component';
 import { AlertComponent } from './components/UI/alert/alert.component';
+import { ConfirmComponent } from './components/UI/confirm/confirm.component';
 
 import { SearchPageComponent } from './components/pages/search/search-page.component';
 import { ContactPageComponent } from './components/pages/contact/contact-page.component';
@@ -31,24 +31,21 @@ import { SignInPageComponent } from './components/pages/sign-in/sign-in.componen
 import { ActivationTokenPageComponent } from './components/pages/activation-token/activation-token-page.component';
 
 // ---------------- directives  ---------------- //
-import { SearchDirective } from './directives/search.directive'
+import { SearchDirective } from './directives/search.directive';
 
 // ------------------ // http services // ------------------------//
-import { HttpApiEffectsService} from './services/http-api.effects'
+import { HttpApiEffectsService} from './services/http-api.effects';
 import { JsonpRequestService } from './services/jsonp-request.service';
 import { NodeCookbookRequestsFactory } from './services/node-cookbook-requests.factory';
 
 
 // ------------------ // effects // ------------------------//
-import { UnstoredEffects } from './services/unstored.effects'
+import { UnstoredEffects } from './services/unstored.effects';
 
 // ------------------- // state managing // -------------------- //
 import { reducer, State } from './reducers';
 
-// ------------------- // actions // -------------------- //
 
-import { ServerConnectionCheckAction } from './actions/server-connection'
-import { SignInSuccessAction } from './actions/sign-in'
 
 @NgModule({
   imports: [
@@ -68,6 +65,7 @@ import { SignInSuccessAction } from './actions/sign-in'
   ],
   declarations: [
     AppComponent,
+    // BodyComponent,
     MenuComponent,
     AutocompleteComponent,
     SearchPageComponent,
@@ -77,7 +75,9 @@ import { SignInSuccessAction } from './actions/sign-in'
     SidebarComponent,
     LoaderComponent,
     SignInPageComponent,
-    AlertComponent
+    AlertComponent,
+    ConfirmComponent,
+    NgModel
   ],
   providers: [
     JsonpRequestService,
@@ -93,6 +93,11 @@ export class AppModule {
       private store: Store<State>,
       private httpApiEffectsService: HttpApiEffectsService
   ){
-    this.store.dispatch(new ServerConnectionCheckAction());
+    // this.store.dispatch(new ServerConnectionCheckAction());
+    // this.store.dispatch(new ShowConfirmAction({ header:'Please confirm', message: 'Tadam something', onConfirm: this.doSomething }));
+  }
+
+  doSomething(): void {
+        debugger;
   }
 }

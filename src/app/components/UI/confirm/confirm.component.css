@@ -1,4 +1,4 @@
-.alert__background {
+.confirm__background {
 	position: absolute;
 	z-index: 11;
 	top: 0;
@@ -11,13 +11,13 @@
 	opacity: 0;
 }
 
-.alert__background--visible {
+.confirm__background--visible {
 	visibility: visible;
 	display: block;
 	opacity: 1;
 }
 
-.alert__container {
+.confirm__container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -29,7 +29,7 @@
 	flex-direction: column;
 }
 
-.alert__message {
+.confirm__message {
 	font-family: 'Open Sans', sans-serif;
 	color: #999;
 	padding: 1em;
@@ -38,15 +38,16 @@
 	text-align: center;
 }
 
-.alert__button {
-	margin: 0.8em auto;
+.confirm__button, .cancel__button {
+	margin: 0.8em 0.3em;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6em;
 	justify-content: center;
 	align-items: center;
+	width: 1.6em;
 }
 
-.alert__header {
+.confirm__header {
 	font-family: 'Open Sans', sans-serif;
 	color: #999;
 	padding: 0.9em 1.2em;
@@ -54,4 +55,8 @@
 	border-bottom: 1px solid #F2F2F2;
 	text-align: center;
 	font-weight: bold;
+}
+
+.confirm__footer {
+	padding: 0 1em;
 }

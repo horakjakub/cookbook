@@ -37,6 +37,7 @@ export class MenuComponent {
   sidebarVisible: boolean = false;
   favoritesRecipes: any;
   serverOnline: boolean;
+  rangeValue: number = 10;
 
   constructor(
     private router: Router,
@@ -83,6 +84,10 @@ export class MenuComponent {
     if(page.url !== 'search'){
       this.store.dispatch(new layout.CloseSidenavAction());
     }
+  }
+
+  changeSize(val: number): void {
+    this.store.dispatch(new layout.SizeChangeAction(val));
   }
 
   toggleSidenav() {

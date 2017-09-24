@@ -18,7 +18,7 @@
 .sidebar__content {
 	height: calc(100% - 5em);
 	overflow: auto;
-	margin: 5em 0 0 0;
+	margin: 6em 0 0 0;
 }
 
 .sidebar__header {
@@ -89,6 +89,16 @@
 	transition: color 0.2s ease-in-out;
 	display: none;
 	margin: 0 0 0.1em 0;
+}
+
+.favorites-list-item__send__icon {
+	font-size: 1.8em;
+	transition: all 0.4s ease-in-out;
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.favorites-list-item__send__icon:hover {
+	color: #00B298;
 }
 
 .favorites-list-item__close__icon {
