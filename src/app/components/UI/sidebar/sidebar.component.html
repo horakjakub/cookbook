@@ -3,7 +3,9 @@
     <header class="sidebar__header" *ngIf="!signedIn">
       You are not signed in, so list of favorites will not be saved. We highly recommend to <a (click)="goToSignIn()">sign in</a>, to fully enjoy app features.
     </header>
-    <div class="favorites-list-item__container" *ngFor="let recipe of favoritesRecipes; let i = index;" [ngClass]="{ 'favorites-list-item__container--selected': isRecipeExpanded(recipe) }">
+    <div class="favorites-list-item__container"
+         *ngFor="let recipe of favoritesRecipes; let i = index;"
+         [ngClass]="{ 'favorites-list-item__container--selected': isRecipeExpanded(recipe) }">
         <header class="favorites-list-item__header" (click)="toggleRecipe(recipe)">
           <div class="favorites-list-item__icon__wrapper">
               <i class="material-icons favorites-list-item__icon favorites-list-item__arrow-down__icon">keyboard_arrow_down</i>
